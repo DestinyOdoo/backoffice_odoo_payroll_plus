@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_novelty_portal_user,hr.novelty.portal.user,hr_novelty_client.model_hr_novelty,hr_novelty_portal_client.group_hr_novelty_portal,1,0,1,0
+access_hr_novelty_type_portal_user,hr.novelty.type.portal.user,hr_novelty_client.model_hr_novelty_event,hr_novelty_portal_client.group_hr_novelty_portal,1,0,0,0
+access_hr_novelty_event_group_user,hr.novelty.event.group.user,hr_novelty_portal_client.model_hr_novelty_event_group,hr.group_hr_user,1,0,0,0
+access_hr_novelty_event_group_manager,hr.novelty.event.group.manager,hr_novelty_portal_client.model_hr_novelty_event_group,hr.group_hr_manager,1,1,1,1

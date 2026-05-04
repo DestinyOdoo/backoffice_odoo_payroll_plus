@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_certificado_laboral" name="Certificado laboral">
+        <t t-call="portal.portal_layout">
+            <t t-set="additional_title" t-value="'Certificado laboral'"/>
+            <t t-set="breadcrumbs_searchbar" t-value="False"/>
+            <div id="wrap" class="oe_structure">
+                <div class="container mt-4">
+                    <t t-if="error">
+                        <div class="alert alert-danger" role="alert">
+                            <t t-out="error"/>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="card border-0 shadow-sm mb-4" style="border-radius: 15px;">
+                            <div class="card-header py-4" style="background: #b2dfdb; color: #00695c; border-radius: 15px 15px 0 0;">
+                                <h3 class="mb-0 fw-bold"><i class="fa fa-file-text-o me-2"/> Certificado laboral</h3>
+                            </div>
+                            <div class="card-body p-4">
+                                <p class="mb-4">
+                                    Puedes generar y descargar tu certificado laboral en PDF. Incluye tu nombre,
+                                    fecha de ingreso, salario fijo, salario flexible y salario total según tu contrato vigente.
+                                </p>
+                                <a href="/my/certificado-laboral/generar" class="btn btn-primary btn-lg js_certificate_download">
+                                    <i class="fa fa-download me-2"/> Generar y descargar certificado
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm" style="border-radius: 15px;">
+                            <div class="card-header py-3" style="background: #e0f2f1; color: #00695c; border-radius: 15px 15px 0 0;">
+                                <h4 class="mb-0"><i class="fa fa-history me-2"/> Historial de solicitudes</h4>
+                            </div>
+                            <div class="card-body p-4">
+                                <p class="text-muted small mb-3">
+                                    Aquí puedes ver todas las veces que has solicitado tu certificado y volver a descargar el PDF.
+                                </p>
+                                <t t-if="certificates">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Fecha de solicitud</th>
+                                                    <th>Estado</th>
+                                                    <th class="text-end">Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <t t-foreach="certificates" t-as="cert">
+                                                    <tr>
+                                                        <td><t t-out="cert.request_date" t-options="{'widget': 'datetime', 'format': 'dd/MM/yyyy'}"/></td>
+                                                        <td>
+                                                            <span t-attf-class="badge bg-#{cert.state == 'done' and 'success' or 'secondary'}">
+                                                                <t t-out="cert.state == 'done' and 'Generado' or 'Borrador'"/>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <t t-if="cert.state == 'done'">
+                                                                <a t-att-href="'/my/certificado-laboral/descargar/%s' % cert.id" class="btn btn-sm btn-outline-primary js_certificate_download">
+                                                                    <i class="fa fa-download me-1"/> Descargar PDF
+                                                                </a>
+                                                            </t>
+                                                            <t t-else="">
+                                                                <span class="text-muted">—</span>
+                                                            </t>
+                                                        </td>
+                                                    </tr>
+                                                </t>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <p class="text-muted mb-0">Aún no has generado ningún certificado. Usa el botón de arriba para crear uno.</p>
+                                </t>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+            <script>
+                (function () {
+                    var portalUrl = '/my/certificado-laboral';
+                    document.querySelectorAll('.js_certificate_download').forEach(function (link) {
+                        link.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            var url = this.getAttribute('href');
+                            fetch(url, { credentials: 'same-origin' })
+                                .then(function (res) { return res.blob(); })
+                                .then(function (blob) {
+                                    var a = document.createElement('a');
+                                    a.href = URL.createObjectURL(blob);
+                                    a.download = 'Certificado_Laboral.pdf';
+                                    document.body.appendChild(a);
+                                    a.click();
+                                    document.body.removeChild(a);
+                                    URL.revokeObjectURL(a.href);
+                                    setTimeout(function () {
+                                        window.location.href = portalUrl;
+                                    }, 1200);
+                                })
+                                .catch(function () {
+                                    window.location.href = url;
+                                });
+                        });
+                    });
+                })();
+            </script>
+        </t>
+    </template>
+</odoo>

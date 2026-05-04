@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_employment_certificate_user,hr.employment.certificate.user,model_hr_employment_certificate,hr.group_hr_user,1,1,1,1
+access_hr_employment_certificate_manager,hr.employment.certificate.manager,model_hr_employment_certificate,hr.group_hr_manager,1,1,1,1
+access_hr_employment_certificate_portal,hr.employment.certificate.portal,model_hr_employment_certificate,hr_employment_certificate_client.group_hr_employment_certificate_portal,1,0,1,0

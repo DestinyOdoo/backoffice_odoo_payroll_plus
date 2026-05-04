@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_novelty_event_group_tree" model="ir.ui.view">
+        <field name="name">hr.novelty.event.group.tree</field>
+        <field name="model">hr.novelty.event.group</field>
+        <field name="arch" type="xml">
+            <tree string="Grupos para eventos" editable="bottom">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_novelty_event_group_form" model="ir.ui.view">
+        <field name="name">hr.novelty.event.group.form</field>
+        <field name="model">hr.novelty.event.group</field>
+        <field name="arch" type="xml">
+            <form string="Grupo para eventos">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hr_novelty_event_group" model="ir.actions.act_window">
+        <field name="name">Grupos para eventos</field>
+        <field name="res_model">hr.novelty.event.group</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea grupos (ej. Directivos, Operativos) para restringir qué eventos de novedad ven los empleados en el portal.
+            </p>
+            <p>
+                En cada evento (menú Novedades > Configuración > Eventos) puedes activar "Restringir por grupo" y elegir los grupos permitidos.
+                En cada empleado asignas un único grupo. Solo verán el evento en el portal los empleados cuyo grupo esté en la lista del evento.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_hr_novelty_event_group"
+              name="Grupos para eventos"
+              parent="hr_novelty_client.menu_hr_config_novelty"
+              action="action_hr_novelty_event_group"
+              sequence="50"/>
+
+    <!-- Extender formulario de evento -->
+    <record id="view_hr_novelty_event_form_event_group" model="ir.ui.view">
+        <field name="name">hr.novelty.event.form.event.group</field>
+        <field name="model">hr.novelty.event</field>
+        <field name="inherit_id" ref="hr_novelty_client.view_hr_novelty_event_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='restrict_by_gender']" position="after">
+                <field name="restrict_by_group"/>
+                <field name="allowed_event_group_ids" widget="many2many_tags"
+                       invisible="not restrict_by_group"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Campo grupo para eventos en empleado -->
+    <record id="view_hr_employee_form_event_group" model="ir.ui.view">
+        <field name="name">hr.employee.form.event.group</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_phone']" position="after">
+                <field name="event_group_id" options="{'no_create': True}"/>
+                <field name="contact_notification_id" options="{'no_create': False}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

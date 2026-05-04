@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!--
+        Grupo para acceso al certificado laboral desde el portal.
+        No es implicado por base.group_portal, por lo que los usuarios portal
+        no lo tienen por defecto. Se asigna manualmente a los empleados que
+        deben poder solicitar su certificado desde el frontend.
+        -->
+        <record id="group_hr_employment_certificate_portal" model="res.groups">
+            <field name="name">Certificado laboral (Portal)</field>
+            <field name="category_id" ref="base.module_category_human_resources"/>
+            <field name="comment">Permite solicitar y descargar el certificado laboral desde el portal (/my/certificado-laboral). Sin este permiso, los usuarios portal no pueden acceder.</field>
+        </record>
+</odoo>

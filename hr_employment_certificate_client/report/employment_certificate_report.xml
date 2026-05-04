@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tamaño carta, encabezado y footer a 1 cm del borde -->
+    <record id="paperformat_employment_certificate" model="report.paperformat">
+        <field name="name">Certificado Laboral (Carta)</field>
+        <field name="default" eval="False"/>
+        <field name="format">Letter</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <template id="report_employment_certificate">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-set="company" t-value="o.employee_id.company_id"/>
+                <t t-set="contract" t-value="o.contract_id"/>
+                <t t-set="entry_date" t-value="o.get_entry_date_spanish()"/>
+                <t t-set="issue_date" t-value="o.get_issue_date_spanish()"/>
+                <t t-set="cert_city" t-value="company.certificate_city or (company.partner_id and company.partner_id.city) or ''"/>
+                <t t-set="cert_logo" t-value="company.certificate_logo or company.logo"/>
+                <t t-set="ident_display" t-value="o.get_identification_for_certificate()"/>
+                <t t-call="web.basic_layout">
+                    <!-- Contenido con padding lateral; márgenes superior/inferior ya dados por paperformat (1 cm) -->
+                    <div class="page" style="padding: 0 1cm; font-size: 12px; line-height: 1.65; max-width: 100%; box-sizing: border-box;">
+                        <!-- ENCABEZADO: logo alineado a la izquierda, a 1 cm del borde superior (por margin_top) -->
+                        <div style="margin-bottom: 1.2em;">
+                            <img t-if="cert_logo"
+                                 t-att-src="image_data_uri(cert_logo)"
+                                 alt="Logo" style="max-height: 72px; display: block;"/>
+                        </div>
+
+                        <!-- 4 saltos antes del título de empresa -->
+                        <div style="height: 6em;"/>
+                        <!-- Título: nombre empresa + NIT centrado, negrilla -->
+                        <div style="text-align: center; font-family: sans-serif; font-weight: 900; font-size: 24px; line-height: 1.1; color: #333333; text-transform: uppercase;">
+                            <strong><div><t t-out="company.name"/></div></strong>
+                            <strong><div t-if="company.vat">NIT: <t t-out="company.vat"/></div></strong>
+                        </div>
+                        <!-- 4 saltos después del título -->
+                        <div style="height: 8em;"/>
+
+                        <!-- CERTIFICA QUE: -->
+                        <strong><h5 align="center" style="margin: 0 0 0.6em 0; font-size: 20px;"><b>CERTIFICA QUE:</b></h5></strong>
+                        <!-- 2 saltos antes del texto del empleado -->
+                        <div style="height: 6em;"/>
+
+                        <!-- Párrafo datos del empleado: justificado -->
+                        <p style="text-align: justify; margin-bottom: 2em; font-size: 16px;">
+                            El/la señor(a) <strong><t t-out="o.employee_id.name"/></strong>, identificado(a) con cédula de ciudadanía <strong><t t-out="ident_display or 'N/A'"/></strong>,
+                            labora en esta compañía desde el
+                            <t t-if="entry_date">
+                                <strong><t t-out="entry_date['day']"/></strong> de <strong><t t-out="entry_date['month_name']"/></strong> de <strong><t t-out="entry_date['year']"/></strong>
+                            </t>
+                            <t t-else="">—</t>
+                            con un contrato a término indefinido desempeñándose como
+                            <strong><t t-out="contract and contract.job_id and contract.job_id.name or 'N/A'"/></strong>,
+                            <t t-if="contract and (contract.flex_wage_amount or 0) != 0 and contract.flex_wage_ids">
+                                devengando un salario básico de $<strong><t t-out="o.get_formatted_wage(contract and contract.fix_wage_amount or 0)"/></strong>,
+                                un beneficio no salarial de $<strong><t t-out="o.get_formatted_wage(contract and contract.flex_wage_amount or 0)"/></strong>
+                                para una remuneración total mensual de $<strong><t t-out="o.get_formatted_wage(contract and contract.wage or 0)"/></strong>.
+                            </t>
+                            <t t-else="">
+                                devengando un salario total mensual de $<strong><t t-out="o.get_formatted_wage(contract and contract.wage or 0)"/></strong>.
+                            </t>
+                        </p>
+                        <div style="height: 6em;"/>
+                        <p style="text-align: justify; margin-bottom: 2em; font-size: 16px;">
+                            Esta certificación se expide a solicitud del interesado(a).
+                        </p>
+                        <p style="text-align: justify; margin-bottom: 3em; font-size: 16px;">
+                            Dada en <t t-out="cert_city or '—'"/> a los
+                            <t t-if="issue_date">
+                                <t t-out="issue_date['day_words']"/> (<t t-out="issue_date['day']"/>)
+                                días del mes de <t t-out="issue_date['month_name']"/> de <t t-out="issue_date['year_words']"/> (<t t-out="issue_date['year']"/>).
+                            </t>
+                            <t t-else="">—</t>
+                        </p>
+
+                        <p style="margin-bottom: 0.4em; font-size: 16px;"><strong>Atentamente;</strong></p>
+                        <!-- 5 saltos, luego imagen de firma y datos del firmante -->
+                        <div style="height: 3em;"/>
+                        <div style="margin-bottom: 10px;">
+                            <img t-if="company.certificate_signature"
+                                 t-att-src="image_data_uri(company.certificate_signature)"
+                                 alt="Firma" style="max-height: 65px; display: block;"/>
+                        </div>
+                        <div t-if="company.certificate_signer_name" style="font-weight: bold; font-size: 16px;"><t t-out="company.certificate_signer_name"/></div>
+                        <div t-if="company.certificate_signer_job_title" style="font-size: 11px; font-size: 16px;"><t t-out="company.certificate_signer_job_title"/></div>
+                        <div style="font-weight: bold; margin-top: 6px; font-size: 16px;"><t t-out="company.name"/></div>
+
+                        <!-- FOOTER: datos de la empresa a 1 cm del borde inferior (por margin_bottom), alineado a la derecha -->
+                        <div style="margin-top: 2.2em; padding-top: 0.8em; border-top: 1px solid #e0e0e0; text-align: right; font-size: 16px; line-height: 1.4;">
+                            <div><t t-out="company.name"/><t t-if="company.vat"> NIT <t t-out="company.vat"/></t></div>
+                            <div t-if="company.phone">Tel: <t t-out="company.phone"/></div>
+                            <t t-if="company.partner_id and (company.partner_id.street or company.partner_id.city)">
+                                <div>
+                                    <t t-out="company.partner_id.street or ''"/>
+                                    <t t-if="company.partner_id.street2"> <t t-out="company.partner_id.street2"/></t>
+                                    <t t-if="company.partner_id.city">, <t t-out="company.partner_id.city"/></t>
+                                    <t t-if="company.partner_id.state_id"> <t t-out="company.partner_id.state_id.name"/></t>.
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_report_employment_certificate" model="ir.actions.report">
+        <field name="name">Certificado Laboral</field>
+        <field name="model">hr.employment.certificate</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_employment_certificate_client.report_employment_certificate</field>
+        <field name="report_file">hr_employment_certificate_client.report_employment_certificate</field>
+        <field name="print_report_name">'Certificado laboral - %s' % ((o.employee_id.name or 'Certificado').replace('/', '_'))</field>
+        <field name="paperformat_id" ref="paperformat_employment_certificate"/>
+        <field name="binding_model_id" ref="model_hr_employment_certificate"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

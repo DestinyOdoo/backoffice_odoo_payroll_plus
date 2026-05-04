@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- Template principal: Lista de novedades -->
+        <template id="portal_my_novedades" name="Mis Novedades">
+            <t t-call="portal.portal_layout">
+                <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+                <t t-call="portal.portal_searchbar">
+                    <t t-set="title">Novedades</t>
+                </t>
+
+                <div class="container mt-4 mb-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Mensaje de éxito -->
+                            <div t-if="request.params.get('message') == 'created'" 
+                                 class="alert alert-success alert-dismissible fade show shadow-sm" 
+                                 role="alert"
+                                 style="border-left: 4px solid #28a745;">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check-circle fa-2x me-3" style="color: #28a745;"/>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">¡Solicitud creada con éxito!</h6>
+                                        <small>Tu novedad ha sido registrada y está pendiente de aprobación.</small>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+
+                            <!-- Header con título y botón -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div>
+                                    <h2 class="mb-1" style="color: #2c3e50; font-weight: 600;">Mis Novedades</h2>
+                                    <p class="text-muted mb-0">Gestiona y visualiza tus solicitudes de tiempo libre</p>
+                                </div>
+                                <a href="/my/novedades/nueva" 
+                                   class="btn btn-lg shadow-sm"
+                                   style="background: #b2dfdb; color: #00695c; border: none; border-radius: 10px; padding: 12px 30px; font-weight: 600;">
+                                    <i class="fa fa-plus me-2"/> Nueva Solicitud
+                                </a>
+                            </div>
+
+                            <!-- Sin novedades -->
+                            <t t-if="not novedades">
+                                <div class="text-center py-5">
+                                    <div class="card border-0 shadow-sm" style="background: #f8f9fa; border-radius: 15px;">
+                                        <div class="card-body py-5">
+                                            <i class="fa fa-calendar-times-o fa-4x mb-3" style="color: #95a5a6;"/>
+                                            <h4 class="text-muted">No tienes novedades registradas</h4>
+                                            <p class="text-muted">Comienza solicitando tu primera novedad</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+
+                            <!-- Tabla de novedades -->
+                            <t t-if="novedades">
+                                <div class="card border-0 shadow-sm" style="border-radius: 15px; overflow: hidden;">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover mb-0" style="border-radius: 15px;">
+                                            <thead style="background: #b2dfdb; color: #00695c;">
+                                                <tr>
+                                                    <th class="py-3" style="border: none; font-weight: 600;">Nombre</th>
+                                                    <th class="py-3 ps-4" style="border: none; font-weight: 600;">Tipo</th>
+                                                    <th class="py-3" style="border: none; font-weight: 600;">Desde</th>
+                                                    <th class="py-3" style="border: none; font-weight: 600;">Hasta</th>
+                                                    <th class="py-3 text-center" style="border: none; font-weight: 600;">Días</th>
+                                                    <th class="py-3 text-center" style="border: none; font-weight: 600;">Estado</th>
+                                                    <th class="py-3 text-center pe-4" style="border: none; font-weight: 600;">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr t-foreach="novedades" t-as="novedad" 
+                                                    style="transition: all 0.3s ease;"
+                                                    class="novedad-row">
+                                                    <td class="align-middle">
+                                                        <span t-field="novedad.name" class="text-muted"/>
+                                                    </td>
+                                                    <td class="align-middle ps-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fa fa-calendar me-2" style="color: #4db6ac;"/>
+                                                            <span class="fw-semibold" t-field="novedad.event_id"/>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle">
+                                                        <span t-field="novedad.start_date" t-options='{"widget": "date"}'/>
+                                                    </td>
+                                                    <td class="align-middle">
+                                                        <span t-field="novedad.end_date" t-options='{"widget": "date"}'/>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <span class="badge rounded-pill" 
+                                                              style="background: #e8f5e9; color: #2e7d32; padding: 8px 16px; font-weight: 600;">
+                                                            <span t-field="novedad.total_days"/> días
+                                                        </span>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <t t-if="novedad.state == 'draft'">
+                                                            <span class="badge rounded-pill" style="background: #e3f2fd; color: #1565c0; padding: 8px 16px; font-weight: 600;">
+                                                                <i class="fa fa-pencil me-1"/> Borrador
+                                                            </span>
+                                                        </t>
+                                                        <t t-elif="novedad.state == 'wait'">
+                                                            <span class="badge rounded-pill" style="background: #fff3e0; color: #e65100; padding: 8px 16px; font-weight: 600;">
+                                                                <i class="fa fa-clock-o me-1"/> Pendiente
+                                                            </span>
+                                                        </t>
+                                                        <t t-elif="novedad.state in ('approved', 'processed')">
+                                                            <span class="badge rounded-pill text-bg-success" style="padding: 8px 16px; font-weight: 600;">
+                                                                <i class="fa fa-check me-1"/> 
+                                                                <t t-if="novedad.state == 'approved'">Aprobada</t>
+                                                                <t t-else="">Procesada</t>
+                                                            </span>
+                                                        </t>
+                                                        <t t-elif="novedad.state == 'rejected'">
+                                                            <span class="badge rounded-pill" style="background: #ffebee; color: #c62828; padding: 8px 16px; font-weight: 600;">
+                                                                <i class="fa fa-times me-1"/> Rechazada
+                                                            </span>
+                                                        </t>
+                                                        <t t-elif="novedad.state == 'cancel'">
+                                                            <span class="badge rounded-pill" style="background: #ffebee; color: #c62828; padding: 8px 16px; font-weight: 600;">
+                                                                <i class="fa fa-times me-1"/> Rechazada
+                                                            </span>
+                                                        </t>
+                                                    </td>
+                                                    <td class="align-middle text-center pe-4">
+                                                        <a t-attf-href="/my/novedades/#{novedad.id}" 
+                                                           class="btn btn-sm"
+                                                           style="background: #e0f2f1; color: #00695c; border: none; border-radius: 8px; padding: 6px 20px; transition: all 0.3s; font-weight: 600;">
+                                                            <i class="fa fa-eye me-1"/> Ver
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div t-if="pager" class="o_portal_pager text-center mt-4">
+                                    <t t-call="portal.pager"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estilos CSS -->
+                <style>
+                    .novedad-row:hover {
+                        background-color: #f8f9fa !important;
+                        transform: scale(1.01);
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                    }
+                    
+                    .btn:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 4px 12px rgba(77, 182, 172, 0.3);
+                    }
+                </style>
+            </t>
+        </template>
+
+        <!-- Template: Detalle de novedad -->
+        <template id="portal_novedad_detail" name="Detalle de Novedad">
+            <t t-call="portal.portal_layout">
+                <div class="container mt-4 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <a href="/my/novedades" class="btn btn-outline-secondary mb-4" style="border-radius: 10px;">
+                                <i class="fa fa-arrow-left me-2"/> Volver a Novedades
+                            </a>
+
+                            <div class="card border-0 shadow-sm" style="border-radius: 15px;">
+                                <div class="card-header py-4" 
+                                     style="background: #b2dfdb; color: #00695c; border-radius: 15px 15px 0 0;">
+                                    <h3 class="mb-0 fw-bold"><i class="fa fa-file-text-o me-2"/> Detalle de Novedad</h3>
+                                </div>
+                                <div class="card-body p-4">
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="text-muted small mb-2">NOMBRE</label>
+                                            <div class="p-3 rounded" style="background: #f8f9fa;">
+                                                <p class="mb-0"><span t-field="novedad.name"/></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <label class="text-muted small mb-2">TIPO DE AUSENCIA</label>
+                                            <p class="h5 mb-0"><span t-field="novedad.event_id"/></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="text-muted small mb-2">ESTADO</label>
+                                            <p class="mb-0">
+                                                <t t-if="novedad.state == 'draft'">
+                                                    <span class="badge" style="background: #e3f2fd; color: #1565c0; padding: 10px 20px; font-size: 14px;">
+                                                        <i class="fa fa-pencil me-1"/> Borrador
+                                                    </span>
+                                                </t>
+                                                <t t-elif="novedad.state == 'wait'">
+                                                    <span class="badge" style="background: #fff3e0; color: #e65100; padding: 10px 20px; font-size: 14px;">
+                                                        <i class="fa fa-clock-o me-1"/> Pendiente de Aprobación
+                                                    </span>
+                                                </t>
+                                                <t t-elif="novedad.state == 'approved'">
+                                                    <span class="badge" style="background: #e8f5e9; color: #2e7d32; padding: 10px 20px; font-size: 14px;">
+                                                        <i class="fa fa-check me-1"/> Aprobada
+                                                    </span>
+                                                </t>
+                                                <t t-elif="novedad.state == 'processed'">
+                                                    <span class="badge" style="background: #ffebee; color: #2e7d32; padding: 10px 20px; font-size: 14px;">
+                                                        <i class="fa fa-times me-1"/> Procesado
+                                                    </span>
+                                                </t>
+                                                <t t-elif="novedad.state == 'cancel'">
+                                                    <span class="badge" style="background: #ffebee; color: #c62828; padding: 10px 20px; font-size: 14px;">
+                                                        <i class="fa fa-times me-1"/> Cancelado
+                                                    </span>
+                                                </t>
+                                                <t t-elif="novedad.state == 'reject'">
+                                                    <span class="badge" style="background: #ffebee; color: #c62828; padding: 10px 20px; font-size: 14px;">
+                                                        <i class="fa fa-times me-1"/> Rechazado
+                                                    </span>
+                                                </t>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-4"/>
+
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <label class="text-muted small mb-2">FECHA INICIO</label>
+                                            <p class="h6 mb-0">
+                                                <i class="fa fa-calendar-o me-2" style="color: #4db6ac;"/>
+                                                <span t-field="novedad.start_date" t-options='{"widget": "datetime"}'/>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="text-muted small mb-2">FECHA FIN</label>
+                                            <p class="h6 mb-0">
+                                                <i class="fa fa-calendar-check-o me-2" style="color: #4db6ac;"/>
+                                                <span t-field="novedad.end_date" t-options='{"widget": "datetime"}'/>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-4 mt-2">
+                                        <div class="col-md-6">
+                                            <label class="text-muted small mb-2">DURACIÓN</label>
+                                            <p class="h6 mb-0">
+                                                <span class="badge" style="background: #e8f5e9; color: #2e7d32; padding: 8px 16px; font-size: 16px;">
+                                                    <span t-field="novedad.total_days"/> días
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <t t-if="novedad.start_date_period">
+                                        <hr class="my-4"/>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label class="text-muted small mb-2">PERÍODO</label>
+                                                <p class="h6 mb-0">
+                                                    <span t-if="novedad.start_date_period == 'am'">Mañana</span>
+                                                    <span t-else="">Tarde</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <t t-if="novedad.description">
+                                        <hr class="my-4"/>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label class="text-muted small mb-2">DESCRIPCIÓN</label>
+                                                <div class="p-3 rounded" style="background: #fff3e0; border-left: 4px solid #ff9800;">
+                                                    <p class="mb-0"><span t-field="novedad.description"/></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </t>
+
+                                    <hr class="my-4"/>
+
+                                    <t t-if="novedad.reject_reason">
+                                        <hr class="my-4"/>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label class="text-muted small mb-2">RAZÓN DE RECHAZO</label>
+                                                <div class="p-3 rounded" style="background: #fff3e0; border-left: 4px solid #c62828;">
+                                                    <p class="mb-0"><span t-field="novedad.reject_reason"/></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Template: Nueva novedad -->
+        <template id="portal_nueva_novedad" name="Nueva Novedad">
+            <t t-call="portal.portal_layout">
+                <div class="container mt-4 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <a href="/my/novedades" class="btn btn-outline-secondary mb-4" style="border-radius: 10px;">
+                                <i class="fa fa-arrow-left me-2"/> Volver a Novedades
+                            </a>
+
+                            <!-- Alertas de error -->
+                            <div t-if="request.params.get('error') == 'no_employee'" 
+                                 class="alert alert-danger alert-dismissible fade show shadow-sm" 
+                                 role="alert"
+                                 style="border-left: 4px solid #dc3545; border-radius: 10px;">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-exclamation-circle fa-2x me-3"/>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Error de configuración</h6>
+                                        <small>No se encontró un empleado asociado a tu usuario. Contacta al administrador.</small>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+
+                            <div t-if="error_validation" 
+                                class="alert alert-danger alert-dismissible fade show shadow-sm" 
+                                role="alert"
+                                style="border-left: 4px solid #dc3545; border-radius: 10px;">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-exclamation-circle fa-2x me-3"/>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Error de Validación</h6>
+                                        <small t-esc="error_validation"/>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+
+                            <div t-if="request.params.get('error') == 'missing_fields'" 
+                                 class="alert alert-warning alert-dismissible fade show shadow-sm" 
+                                 role="alert"
+                                 style="border-left: 4px solid #ffc107; border-radius: 10px;">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-exclamation-triangle fa-2x me-3"/>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Campos incompletos</h6>
+                                        <small>Por favor, completa todos los campos requeridos.</small>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+
+                            <div t-if="request.params.get('error') == 'validation'" 
+                                 class="alert alert-warning alert-dismissible fade show shadow-sm" 
+                                 role="alert"
+                                 style="border-left: 4px solid #ff9800; border-radius: 10px;">
+                                <div class="d-flex align-items-start">
+                                    <i class="fa fa-exclamation-triangle fa-2x me-3" style="margin-top: 4px;"/>
+                                    <div>
+                                        <h6 class="mb-2 fw-bold">Error de Validación</h6>
+                                        <p class="mb-0 small" style="white-space: pre-line;" t-esc="request.params.get('error_message', 'Las fechas seleccionadas no son válidas.')"/>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+
+                            <!-- Formulario -->
+                            <div class="card border-0 shadow-sm" style="border-radius: 15px;">
+                                <div class="card-header py-4" 
+                                     style="background: #b2dfdb; color: #00695c; border-radius: 15px 15px 0 0;">
+                                    <h3 class="mb-0 fw-bold"><i class="fa fa-plus-circle me-2"/> Nueva Solicitud de Novedad</h3>
+                                </div>
+                                <div class="card-body p-4">
+                                    <form action="/my/novedades/create" method="POST" enctype="multipart/form-data">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                                        <div class="mb-4">
+                                            <label for="event_id" class="form-label fw-semibold">
+                                                <i class="fa fa-tag me-2" style="color: #4db6ac;"/> Tipo de Permiso *
+                                            </label>
+                                        <select name="event_id" id="event_id" class="form-select form-select-lg" required="required">
+                                            <option value="">Selecciona un tipo...</option>
+                                            <t t-foreach="novelty_types" t-as="novelty_type">
+                                                <option t-att-value="novelty_type.id" 
+                                                        t-att-data-name="novelty_type.name"
+                                                        t-att-data-half-time="'1' if novelty_type.half_time_permission else '0'"
+                                                        t-att-selected="post_data and int(post_data.get('event_id', 0)) == novelty_type.id">
+                                                    <t t-esc="novelty_type.name"/>
+                                                </option>
+                                            </t>
+                                        </select>
+                                        </div>
+
+                                        <!-- Alerta Vacaciones: muestra días disponibles (remaining_leaves_count) -->
+                                        <div id="vacaciones_alert" class="alert alert-info alert-dismissible fade show mb-4 d-none" 
+                                             role="alert" style="border-left: 4px solid #0d6efd; border-radius: 10px;">
+                                            <i class="fa fa-info-circle me-2"/> 
+                                            <strong>
+                                                <t t-if="remaining_leaves_count is not None">
+                                                    Tienes <t t-esc="int(remaining_leaves_count)"/> día(s) de vacaciones disponibles.
+                                                </t>
+                                                Recuerda que debes solicitar tus vacaciones con al menos 15 días de anterioridad y avisar a tu Jefe Directo o Project Manager asignado para coordinar el reemplazo de tus labores.
+                                            </strong>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+
+                                        <!-- Select Mañana/Tarde para eventos con Permisos medio tiempo (start_date_period: am/pm) -->
+                                        <div id="extra_time_fields" class="mb-4 d-none">
+                                            <label for="start_date_period" class="form-label fw-semibold">
+                                                <i class="fa fa-clock-o me-2" style="color: #4db6ac;"/> Período *
+                                            </label>
+                                            <select name="start_date_period" id="start_date_period" class="form-select form-select-lg">
+                                                <option value="">Selecciona...</option>
+                                                <option value="am" t-att-selected="post_data and post_data.get('start_date_period') == 'am'">Mañana</option>
+                                                <option value="pm" t-att-selected="post_data and post_data.get('start_date_period') == 'pm'">Tarde</option>
+                                            </select>
+                                        </div>
+
+                                        <div id="incapacity_fields" class="mb-4 d-none">
+                                            <label class="form-label fw-semibold">Origen de la Incapacidad *</label>
+                                            <div class="d-flex gap-4 p-3 rounded" style="background: #f8f9fa; border: 2px solid #e9ecef;">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="incapacity_type" id="type_eps" value="eps" t-att-checked="post_data and post_data.get('incapacity_type') == 'eps'"/>
+                                                    <label class="form-check-label" for="type_eps">EPS</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="incapacity_type" id="type_arl" value="arl" t-att-checked="post_data and post_data.get('incapacity_type') == 'arl'"/>
+                                                    <label class="form-check-label" for="type_arl">ARL</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            document.getElementById('event_id').addEventListener('change', function() {
+                                                var selectedOption = this.options[this.selectedIndex];
+                                                var isHalfTime = selectedOption &amp;&amp; selectedOption.getAttribute('data-half-time') === '1';
+                                                var incapacityDiv = document.getElementById('incapacity_fields');
+                                                var vacacionesAlert = document.getElementById('vacaciones_alert');
+                                                var extraTimeDiv = document.getElementById('extra_time_fields');
+                                                var extraTimeSelect = document.getElementById('start_date_period');
+
+                                                incapacityDiv.classList.add('d-none');
+                                                vacacionesAlert.classList.add('d-none');
+                                                extraTimeDiv.classList.add('d-none');
+                                                extraTimeSelect.removeAttribute('required');
+
+                                                var endDateGroup = document.getElementById('end_date_group');
+                                                var endDateInput = document.getElementById('end_date');
+                                                var startDateInput = document.getElementById('start_date');
+                                                if (selectedOption &amp;&amp; selectedOption.text.includes('Incapacidad')) {
+                                                    incapacityDiv.classList.remove('d-none');
+                                                    endDateGroup.classList.remove('d-none');
+                                                    endDateInput.removeAttribute('readonly');
+                                                    endDateInput.setAttribute('required', 'required');
+                                                } else if (selectedOption &amp;&amp; selectedOption.text.includes('Vacaciones')) {
+                                                    vacacionesAlert.classList.remove('d-none');
+                                                    endDateGroup.classList.remove('d-none');
+                                                    endDateInput.removeAttribute('readonly');
+                                                    endDateInput.setAttribute('required', 'required');
+                                                } else if (isHalfTime) {
+                                                    extraTimeDiv.classList.remove('d-none');
+                                                    extraTimeSelect.setAttribute('required', 'required');
+                                                    endDateGroup.classList.remove('d-none');
+                                                    endDateInput.removeAttribute('required');
+                                                    endDateInput.setAttribute('readonly', 'readonly');
+                                                    endDateInput.value = startDateInput.value || '';
+                                                } else {
+                                                    endDateGroup.classList.remove('d-none');
+                                                    endDateInput.removeAttribute('readonly');
+                                                    endDateInput.setAttribute('required', 'required');
+                                                }
+                                            });
+                                            document.getElementById('start_date').addEventListener('change', function() {
+                                                var eventSelect = document.getElementById('event_id');
+                                                var selectedOption = eventSelect.options[eventSelect.selectedIndex];
+                                                if (selectedOption &amp;&amp; selectedOption.getAttribute('data-half-time') === '1') {
+                                                    document.getElementById('end_date').value = this.value;
+                                                }
+                                            });
+                                            // Trigger on load when returning with post_data (e.g. after validation error)
+                                            var eventSelect = document.getElementById('event_id');
+                                            if (eventSelect &amp;&amp; eventSelect.value) {
+                                                eventSelect.dispatchEvent(new Event('change'));
+                                            }
+                                        </script>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <label for="start_date" class="form-label fw-semibold">
+                                                    <i class="fa fa-calendar me-2" style="color: #4db6ac;"/> Fecha Inicio *
+                                                </label>
+                                                <input type="date" name="start_date" id="start_date" 
+                                                    class="form-control form-control-lg" 
+                                                    t-att-value="post_data.get('start_date') if post_data else ''" required="required"/>
+                                            </div>
+                                            <div id="end_date_group" class="col-md-6 mb-4">
+                                                <label for="end_date" class="form-label fw-semibold">
+                                                    <i class="fa fa-calendar-check-o me-2" style="color: #4db6ac;"/> Fecha Fin *
+                                                </label>
+                                                <input type="date" name="end_date" id="end_date" 
+                                                    class="form-control form-control-lg" 
+                                                    t-att-value="post_data.get('end_date') if post_data else ''" required="required"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label for="description" class="form-label fw-semibold">
+                                                <i class="fa fa-file-text-o me-2" style="color: #4db6ac;"/> Descripción
+                                            </label>
+                                            <textarea name="description" id="description" class="form-control" rows="4">
+                                                <t t-esc="post_data.get('description') if post_data else ''"/>
+                                            </textarea>
+                                        </div>
+
+                                        <div class="alert mb-4" 
+                                             style="background: #e0f2f1; border: none; border-left: 4px solid #4db6ac; border-radius: 10px; color: #00695c;">
+                                            <i class="fa fa-info-circle me-2"/> 
+                                            <strong>Nota:</strong> Asegúrate de que las fechas no se solapen con otras novedades ya registradas.
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label for="attachment" class="form-label fw-semibold">
+                                                <i class="fa fa-paperclip me-2" style="color: #4db6ac;"/> Adjuntar Documento
+                                            </label>
+                                            <input type="file" name="attachment" id="attachment" 
+                                                   class="form-control"
+                                                   style="border-radius: 10px; border: 2px solid #e9ecef;"/>
+                                            <small class="text-muted">Formatos permitidos: PDF, JPG, PNG (Máx. 5MB)</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end gap-3">
+                                            <a href="/my/novedades" 
+                                               class="btn btn-lg btn-outline-secondary"
+                                               style="border-radius: 10px; padding: 12px 30px;">
+                                                Cancelar
+                                            </a>
+                                            <button type="submit" 
+                                                    class="btn btn-lg shadow-sm"
+                                                    style="background: #b2dfdb; color: #00695c; border: none; border-radius: 10px; padding: 12px 30px; font-weight: 600;">
+                                                <i class="fa fa-check me-2"/> Guardar Solicitud
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Agregar contador al portal home (solo si el usuario tiene permiso) -->
+        <template id="portal_my_home_novedades" name="Portal My Home: Novedades" inherit_id="portal.portal_my_home" priority="40">
+            <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+                <t t-if="request.env.user._is_internal() or request.env.user.has_group('hr_novelty_portal_client.group_hr_novelty_portal')">
+                    <t t-call="portal.portal_docs_entry">
+                        <t t-set="title">Novedades</t>
+                        <t t-set="url" t-value="'/my/novedades'"/>
+                        <t t-set="placeholder_count" t-value="'novedades_count'"/>
+                    </t>
+                </t>
+            </xpath>
+        </template>
+</odoo>
