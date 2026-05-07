@@ -1,0 +1,27 @@
+
+{
+    'name': 'Payroll Income Withholding Client',
+    'version': '17.0',
+    'author': 'BACKOFFICE S.A.S.',
+    'website': 'https://www.boffice.cloud/',
+    'category': 'Human Resources',
+    'summary': "Module to manage income withholding in payroll of employee",
+    'depends': ['base',
+                'mail',
+                'hr',
+                'hr_payroll',
+                'bo_license_client',
+                'base_destiny_client',
+                'hr_novelty_client',
+                'hr_contract_completion_client',
+                ],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/ir_cron_data.xml',
+        'views/hr_payroll_income_withholding_view.xml',
+        'views/hr_novelty_view.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
+}
