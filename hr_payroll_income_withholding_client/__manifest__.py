@@ -15,6 +15,13 @@
                 'hr_novelty_client',
                 'hr_contract_completion_client',
                 ],
+    'images': [
+        'static/description/main_screenshot.png',
+        'static/description/screenshots/screen_01_paso1_instalacion.png',
+        'static/description/screenshots/screen_02_paso2_config_nomina.png',
+        'static/description/screenshots/screen_03_paso3_novedades.png',
+        'static/description/screenshots/screen_04_placeholder.png',
+    ],
     'data': [
         'security/ir.model.access.csv',
         'data/ir_cron_data.xml',
