@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_hr_novelty_form_inherit" model="ir.ui.view">
+        <field name="name">hr.novelty.form.inherit</field>
+        <field name="model">hr.novelty</field>
+        <field name="inherit_id" ref="hr_novelty_client.view_hr_novelty_form"/>
+        <field name="arch" type="xml">
+            <field name="motivo_talento_id" position="before">
+                <field name="reason_talent_id"
+                       invisible="not is_motivo_de_retiro"
+                       readonly="state in ('wait_comments','approved','processed','cancel', 'rejected')"
+                       options="{'no_create': True, 'no_create_edit': True}"/>
+                <field name="motivo_nomina_id" invisible="1" readonly="state in ('wait_comments','approved','processed','cancel', 'rejected')"/>
+            </field>
+            <field name="motivo_talento_id" position="after">
+                <field name="contract_terminated_id" readonly="1"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_hr_novelty_form_notifications_inherit" model="ir.ui.view">
+        <field name="name">view.hr.novelty.form.notifications.inherit</field>
+        <field name="model">hr.novelty</field>
+        <field name="inherit_id" ref="hr_novelty_client.view_hr_novelty_form_notifications"/>
+        <field name="arch" type="xml">
+            <field name="motivo_talento_id" position="after">
+                <field name="contract_terminated_id" readonly="1"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="jd_demo_1" model="jca.details">
+            <field name="name">BackOffice Talent Base</field>
+            <field name="code">BtDestiny</field>
+            <field name="type_of_level">Base</field>
+            <field name="description">BackOffice Talent Base</field>
+        </record>
+
+        <record id="jd_demo_2" model="jca.details">
+            <field name="name">Strategic BackOffice</field>
+            <field name="code">EsDestiny</field>
+            <field name="type_of_level">Strategic</field>
+            <field name="description">Strategic BackOffice</field>
+        </record>
+
+        <record id="jd_demo_3" model="jca.details">
+            <field name="name">Tactical BackOffice</field>
+            <field name="code">Tadestiny</field>
+            <field name="type_of_level">Tactical</field>
+            <field name="description">Tactical BackOffice</field>
+        </record>
+</odoo>

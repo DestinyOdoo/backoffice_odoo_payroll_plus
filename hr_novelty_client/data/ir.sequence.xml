@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="novelty_seq_id" model="ir.sequence">
+        <field name="name">novelty_sequence</field>
+        <field name="code">hr.novelty</field>
+        <field name="prefix">NOV-</field>
+        <field name="padding">6</field>
+    </record>
+
+</odoo>

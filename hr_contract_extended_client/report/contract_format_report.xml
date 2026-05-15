@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_apprenticeship_contract" model="ir.actions.report">
+        <field name="name">CONTRATO APRENDIZ</field>
+        <field name="model">hr.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_contract_extended.apprenticeship_contract</field>
+        <field name="report_file">hr_contract_extended.apprenticeship_contract</field>
+        <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_contract_fijo" model="ir.actions.report">
+        <field name="name">CONTRATO FIJO</field>
+        <field name="model">hr.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_contract_extended.contract_fijo</field>
+        <field name="report_file">hr_contract_extended.contract_fijo</field>
+        <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_contrato_indefibido_integral" model="ir.actions.report">
+        <field name="name">CONTRATO INDEFINIDO INTEGRAL</field>
+        <field name="model">hr.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_contract_extended.contrato_indefibido_integral</field>
+        <field name="report_file">hr_contract_extended.contrato_indefibido_integral</field>
+        <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_contrato_indefibido" model="ir.actions.report">
+        <field name="name">CONTRATO INDEFINIDO</field>
+        <field name="model">hr.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_contract_extended.contrato_indefibido</field>
+        <field name="report_file">hr_contract_extended.contrato_indefibido</field>
+        <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_contrato_practicante" model="ir.actions.report">
+        <field name="name">CONTRATO PRACTICANTE</field>
+        <field name="model">hr.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_contract_extended.contrato_practicante</field>
+        <field name="report_file">hr_contract_extended.contrato_practicante</field>
+        <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_contrato_practicas" model="ir.actions.report">
+        <field name="name">CONVENIO PRACTICAS</field>
+        <field name="model">hr.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_contract_extended.contrato_practicas</field>
+        <field name="report_file">hr_contract_extended.contrato_practicas</field>
+        <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

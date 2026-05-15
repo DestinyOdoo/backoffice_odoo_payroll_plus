@@ -1,0 +1,789 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_extended
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 16:39+0000\n"
+"PO-Revision-Date: 2021-01-27 15:50-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__additional_note
+msgid "Additional Note"
+msgstr "Nota adicional"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__age
+msgid "Age in Years"
+msgstr "Edad en años"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.animal_pet_action
+#: model:ir.model,name:hr_employee_extended.model_animal_pet
+#: model:ir.ui.menu,name:hr_employee_extended.animal_pet_menu_action
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.animal_pet_view_form
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.animal_pet_view_tree
+msgid "Animal Pet"
+msgstr "Animal mascota"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.animal_race_action
+#: model:ir.model,name:hr_employee_extended.model_animal_race
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__animal_race_id
+#: model:ir.ui.menu,name:hr_employee_extended.animal_race_menu_action
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.animal_race_view_form
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.animal_race_view_tree
+msgid "Animal Race"
+msgstr "Raza animal"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.animal_type_action
+#: model:ir.model,name:hr_employee_extended.model_animal_type
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__animal_type_id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__animal_type_id
+#: model:ir.ui.menu,name:hr_employee_extended.animal_type_menu_action
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.animal_type_view_form
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.animal_type_view_tree
+msgid "Animal Type"
+msgstr "Tipo de animal"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,certificate:0
+msgid "Bachelor"
+msgstr "Licenciado"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__bank_account_id
+msgid "Bank Account Number"
+msgstr "Número de Cuenta Bancaria"
+
+#. module: hr_employee_extended
+#: selection:report.employee.wizard,report_type:0
+msgid "CSV"
+msgstr ""
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.report_employee_wizard_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__certificate
+msgid "Certificate Level"
+msgstr "Nivel de certificado"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__coach_id
+msgid "Coach"
+msgstr "Monitor"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__code
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__code
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__code
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__code
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__code
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__code
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__code_office
+msgid "Code Office"
+msgstr "Codigo de oficina"
+
+#. module: hr_employee_extended
+#: model:ir.model,name:hr_employee_extended.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__contact_ids
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__cost_center_id
+msgid "Cost Center"
+msgstr "Centro de costo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__cost_line_id
+msgid "Cost Line"
+msgstr "Linea de costo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__country_of_birth
+msgid "Country of Birth"
+msgstr "País de Nacimiento"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__create_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__create_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__birthday
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__dob
+msgid "Date of birth"
+msgstr "Fecha de nacimiento"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,help:hr_employee_extended.field_hr_employee__resource_calendar_id
+msgid "Define the schedule of resource"
+msgstr "Define la planificación del recurso."
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__department_id
+msgid "Department"
+msgstr "Departamento"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_department__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__description
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__display_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,marital:0
+msgid "Divorced"
+msgstr "Divorciado"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__emergency_contact
+msgid "Emergency Contact"
+msgstr "Contacto de emergencia"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__emergency_phone
+msgid "Emergency Phone"
+msgstr "Teléfono de emergencia"
+
+#. module: hr_employee_extended
+#: model:ir.model,name:hr_employee_extended.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__google_drive_link
+msgid "Employee Documents"
+msgstr "Documentos del empleado"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,help:hr_employee_extended.field_hr_employee__bank_account_id
+msgid "Employee bank salary account"
+msgstr "Cuenta bancaria de salario del empleado."
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.res_config_settings_view_form_hr
+msgid "Employee update status Cron."
+msgstr "Estado de actualización del empleado Cron"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__employee_ids
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__employment_relationship_id
+msgid "Employment Relationship"
+msgstr "Realiciones laborales"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,help:hr_employee_extended.field_hr_employee__address_home_id
+msgid "Enter here the private address of the employee, not the one linked to your company."
+msgstr "Registrar aquí la dirección privada del empleado, no la asociada a la compañía"
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.report_employee_wizard_view
+msgid "Export Data"
+msgstr "Exportar datos"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,gender:0
+msgid "Female"
+msgstr "Mujer"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__field_id
+msgid "Field"
+msgstr "Campo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__study_field
+msgid "Field of Study"
+msgstr "Ámbito de estudio"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__field_ids
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__field_ids
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_report_model_config_form
+msgid "Fields"
+msgstr "Campos"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,help:hr_employee_extended.field_report_sub_model_field_config__model_name
+msgid "For relationship fields, the technical name of the target model"
+msgstr "Para campos de relación, el nombre técnico del modelo destino"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__functional_boss
+msgid "Functional Boss"
+msgstr "Jefe funcional"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__gender
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: hr_employee_extended
+#: model:ir.ui.menu,name:hr_employee_extended.hr_curriculum_vitae_menu
+msgid "HR Curriculum Vitae"
+msgstr "HR FResumen Hoja de Vida"
+
+#. module: hr_employee_extended
+#: model:ir.model,name:hr_employee_extended.model_hr_department
+msgid "HR Department"
+msgstr "Departamento Recursos Humanos"
+
+#. module: hr_employee_extended
+#: model:ir.model,name:hr_employee_extended.model_hr_employee
+msgid "HR Employee"
+msgstr "HR Empleado"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_arl_action
+#: model:ir.model,name:hr_employee_extended.model_hr_arl
+#: model:ir.ui.menu,name:hr_employee_extended.hr_arl_menu_action
+msgid "Hr Arl"
+msgstr "ARL"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_arl_level_action
+#: model:ir.model,name:hr_employee_extended.model_hr_arl_level
+#: model:ir.ui.menu,name:hr_employee_extended.hr_arl_level_menu_action
+msgid "Hr Arl Level"
+msgstr "Nivel ARL"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_cost_center_action
+#: model:ir.model,name:hr_employee_extended.model_hr_cost_center
+#: model:ir.ui.menu,name:hr_employee_extended.hr_cost_center_menu_action
+msgid "Hr Cost Center"
+msgstr "Centro de costo"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_cost_line_action
+#: model:ir.model,name:hr_employee_extended.model_hr_cost_line
+#: model:ir.ui.menu,name:hr_employee_extended.hr_cost_line_menu_action
+msgid "Hr Cost Line"
+msgstr "Linea centro de costo"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_cotract_type_action
+#: model:ir.model,name:hr_employee_extended.model_hr_cotract_type
+#: model:ir.ui.menu,name:hr_employee_extended.hr_cotract_type_menu_action
+msgid "Hr Cotract Type"
+msgstr "Tipo de contrato"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_employee_unity_action
+#: model:ir.model,name:hr_employee_extended.model_hr_employee_unity
+#: model:ir.ui.menu,name:hr_employee_extended.hr_employee_unity_menu_action
+msgid "Hr Employee Unity"
+msgstr "Unidad del empleado"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_employee_zone_action
+#: model:ir.model,name:hr_employee_extended.model_hr_employee_zone
+#: model:ir.ui.menu,name:hr_employee_extended.hr_employee_zone_menu_action
+msgid "Hr Employee Zone"
+msgstr "Zona del empleado"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.hr_employment_relationship_action
+#: model:ir.model,name:hr_employee_extended.model_hr_employment_relationship
+#: model:ir.ui.menu,name:hr_employee_extended.hr_employment_relationship_menu_action
+msgid "Hr Employment Relationship"
+msgstr "Realciones laborales"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_hr_employee_form_employee_extended_inherit
+msgid "Information"
+msgstr "Información"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__Interface_salary_type
+msgid "Interface Salary Type"
+msgstr "Tipo de interface salarial"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__manager
+msgid "Is a Manager"
+msgstr "Es un director"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__job_id
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__km_home_work
+msgid "Km home-work"
+msgstr "Km casa-trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config____last_update
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__last_update
+msgid "Last Updated"
+msgstr "Última actualización"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__write_uid
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__write_date
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,marital:0
+msgid "Legal Cohabitant"
+msgstr "Cohabitante legal"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__level
+msgid "Level"
+msgstr "Nivel"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,gender:0
+msgid "Male"
+msgstr "Hombre"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__parent_id
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__marital
+msgid "Marital Status"
+msgstr "Estado civil"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,marital:0
+msgid "Married"
+msgstr "Casado (a)"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,certificate:0
+msgid "Master"
+msgstr "Maestro"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__model_id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__model_id
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__model_id
+msgid "Model"
+msgstr "Modelo"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.report_model_config_act
+#: model:ir.ui.menu,name:hr_employee_extended.menu_report_model_config_form
+msgid "Model / Fields Configuration"
+msgstr "Configuración de modelo / campos"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__model_name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__model_name
+msgid "Model Name"
+msgstr "Nombre del modelo"
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.res_config_settings_view_form_hr
+msgid "Month"
+msgstr "Mes"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_res_config_settings__month
+msgid "Months"
+msgstr "Meses"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_pet__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_race__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_animal_type__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl_level__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cotract_type__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_unity__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee_zone__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employment_relationship__name
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_center__name_interface
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_cost_line__name_interface
+msgid "Name Interface"
+msgstr "Nombre interface"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__country_id
+msgid "Nationality (Country)"
+msgstr "Nacionalidad (País)"
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_employee_filter_inherit
+msgid "Not Required You"
+msgstr "Empleados base"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__children
+msgid "Number of Children"
+msgstr "Número de hijos"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__original_model_id
+msgid "Original Model"
+msgstr "Modelo original"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,certificate:0 selection:hr.employee,gender:0
+msgid "Other"
+msgstr "Otro"
+
+#. module: hr_employee_extended
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_hr_employee_form_employee_extended_inherit
+msgid "Parameters Aditional"
+msgstr "Parametros adicionales"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__passport_id
+msgid "Passport No"
+msgstr "Nº Pasaporte"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_arl__percentage
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#. module: hr_employee_extended
+#: code:addons/hr_employee_extended/wizard/report_employee_wizard.py:48
+#, python-format
+msgid "Please select any Contacts!"
+msgstr "Por favor seleccione cualquier Contactos!"
+
+#. module: hr_employee_extended
+#: code:addons/hr_employee_extended/wizard/report_employee_wizard.py:46
+#, python-format
+msgid "Please select any Employees!"
+msgstr "Por favor, seleccione cualquier empleado!"
+
+#. module: hr_employee_extended
+#: code:addons/hr_employee_extended/wizard/report_employee_wizard.py:44
+#, python-format
+msgid "Please select any Fields!"
+msgstr "Por favor, seleccione cualquier campo!"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__address_home_id
+msgid "Private Address"
+msgstr "Dirección Privada"
+
+#. module: hr_employee_extended
+#: code:addons/hr_employee_extended/models/hr_employee.py:184
+#, python-format
+msgid "Record update issues"
+msgstr "Grabar problemas de actualización"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_contract__reference_arl_id
+msgid "Reference Arl"
+msgstr "Referencia ARL"
+
+#. module: hr_employee_extended
+#: model:ir.ui.menu,name:hr_employee_extended.report_export_main_menu
+#: model:ir.ui.menu,name:hr_employee_extended.report_export_menu
+msgid "Report"
+msgstr "Informe"
+
+#. module: hr_employee_extended
+#: model:ir.actions.act_window,name:hr_employee_extended.report_employee_wizard_action
+#: model:ir.model,name:hr_employee_extended.model_report_employee_wizard
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.report_employee_wizard_view
+msgid "Report Employee Wizard"
+msgstr "\\Asistente de informe del empleado"
+
+#. module: hr_employee_extended
+#: model:ir.model,name:hr_employee_extended.model_report_model_config
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_report_model_config_form
+msgid "Report Model Config"
+msgstr "Informe de configuración del modelo"
+
+#. module: hr_employee_extended
+#: model:ir.model,name:hr_employee_extended.model_report_sub_model_field_config
+msgid "Report Sub Model Field Config"
+msgstr "Configuración de campos para reportes"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_employee_wizard__report_type
+msgid "Report Type"
+msgstr "Tipo de informe"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__is_required_you
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_employee_filter_inherit
+msgid "Required You"
+msgstr "Requerido para YOU"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__salary_effective_date
+msgid "Salary Effective Date"
+msgstr "Fecha efectiva de salario"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__study_school
+msgid "School"
+msgstr "Escuela"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,marital:0
+msgid "Single"
+msgstr "Soltero(a)"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_sub_model_field_config__sub_field_ids
+msgid "Sub Field"
+msgstr "Subcampo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_report_model_config__sub_model_field_ids
+#: model_terms:ir.ui.view,arch_db:hr_employee_extended.view_report_model_config_form
+msgid "Sub Fields"
+msgstr "Subcampos"
+
+#. module: hr_employee_extended
+#: code:addons/hr_employee_extended/models/hr_employee.py:188
+#, python-format
+msgid "There seems a problem in the database:- "
+msgstr "Parece que hay un problema en la base de datos: -"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,help:hr_employee_extended.field_hr_employee__tz
+msgid "This field is used in order to define in which timezone the resources will work."
+msgstr "Este campo se utiliza para definir en qué zona horaria funcionarán los recursos."
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__tz
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_contract__type_flex_id
+msgid "Type Flex"
+msgstr "Tipo de flexible"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__unity_id
+msgid "Unity"
+msgstr "Unidad"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__update_info
+msgid "Update Info?"
+msgstr "¿Actualizar información?"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__visa_expire
+msgid "Visa Expire Date"
+msgstr "Fecha expiración visado"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__visa_no
+msgid "Visa No"
+msgstr "Número de Visado"
+
+#. module: hr_employee_extended
+#: selection:hr.employee,marital:0
+msgid "Widower"
+msgstr "Viudo(a)"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__address_id
+msgid "Work Address"
+msgstr "Dirección de trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__work_email
+msgid "Work Email"
+msgstr "Correo-e del trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__work_location
+msgid "Work Location"
+msgstr "Ubicación de trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__mobile_phone
+msgid "Work Mobile"
+msgstr "Móvil del trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__permit_no
+msgid "Work Permit No"
+msgstr "Número de permiso de trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__work_phone
+msgid "Work Phone"
+msgstr "Teléfono trabajo"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__resource_calendar_id
+msgid "Working Hours"
+msgstr "Horas laborales"
+
+#. module: hr_employee_extended
+#: model:ir.model.fields,field_description:hr_employee_extended.field_hr_employee__zone_id
+msgid "Zone"
+msgstr "Zona"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="crm_case_form_view_job_inherit" model="ir.ui.view">
+        <field name="name">crm.case.form.view.job.inherit</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[1]" position="after">
+                <group string="LinkedIn" name="linkedin">
+                    <group>
+                        <field name="is_linkedin"/>
+                        <field name="linked_api_key"
+                               invisible="not is_linkedin" required="is_linkedin"/>
+                        <field name="linked_secret_key"
+                               invisible="not is_linkedin" 
+                                required="is_linkedin"/>
+                        <field name="linked_user"
+                               invisible="not is_linkedin" required="is_linkedin"/>
+                        <field name="linked_password" password="True"
+                               invisible="not is_linkedin" required="is_linkedin"/>
+                        <field name="linked_return_url"
+                               invisible="not is_linkedin" required="is_linkedin"/>
+                    </group>
+                </group>
+            </xpath>
+            <field name="partner_id" position="attributes">
+                <attribute name="required">1</attribute>
+            </field>
+            <button name="create_employee_from_applicant" position="after">
+                <button string="Sync with LinkedIn" name="sync_linkedin" type="object"
+                        invisible="is_linkedin"/>
+            </button>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,2776 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_novelty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 15:21+0000\n"
+"PO-Revision-Date: 2021-01-28 15:48-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: hr_novelty
+#: model:mail.template,subject:hr_novelty.email_template_novelty_notification
+msgid "${object.name}"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "10"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "11"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "12"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "13"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "14"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "15"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "16"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "17"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "18"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "19"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "20"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "21"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "22"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "23"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "24"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "25"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "26"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "27"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "28"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "29"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "30"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "31"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "32"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "33"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "34"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "35"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "36"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "37"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "38"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "39"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "40"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "41"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "42"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "43"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "44"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "45"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "46"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "47"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "48"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "49"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "50"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "51"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "52"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "53"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "54"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "55"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "56"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "57"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "58"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "59"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "60"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "61"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "62"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "63"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "64"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "65"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "66"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "67"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "68"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "69"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "70"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "71"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "72"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "73"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "74"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "75"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "76"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "77"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "78"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "79"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "80"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "81"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "82"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "83"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "84"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "85"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "86"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "87"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "88"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "89"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty,h_e_procedimiento:0
+#: selection:hr.novelty,total_horas_fijas:0
+msgid "90"
+msgstr ""
+
+#. module: hr_novelty
+#: model:mail.template,body_html:hr_novelty.email_template_novelty_notification
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"text-align: left;\">\n"
+"        <font style=\"font-size: 24px;\"><b>Notificación: ${object.name}</b></font>\n"
+"    </p>\n"
+"\n"
+"    <p style=\"text-align: left;\">\n"
+"        <font style=\"font-size: 14px;\">\n"
+"            Usted tiene hasta el 24 de este más para cargar las novedades de los empleados a su cargo.</font>\n"
+"    </p>\n"
+"</div>\n"
+"            "
+msgstr ""
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "<span class=\"oe_inline\" attrs=\"{'invisible': ['|',('is_aplica_fecha_final','!=',True),('unit_half', '=', True)]}\"> Hasta </span>"
+msgstr ""
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:898
+#, python-format
+msgid "A new Novelty has been Created"
+msgstr "Una nueva Novedad ha sido Creada"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__afc_id
+#: selection:res.partner.bank,type:0
+msgid "AFC"
+msgstr "FCA"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave__is_arl
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_arl
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__arl_id
+msgid "ARL"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_account_setup_bank_manual_config__type
+#: model:ir.model.fields,field_description:hr_novelty.field_res_partner_bank__type
+msgid "Acc Type"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_needaction
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_needaction
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_needaction
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_needaction
+msgid "Action Needed"
+msgstr "Acción requerida"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_adjunto_obligatorio
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_adjunto_obligatorio
+msgid "Adjunto Obligatorio"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__advance_holidays
+msgid "Advance Holidays"
+msgstr "Adelantar asignaciones"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__affectation
+msgid "Affectation"
+msgstr "Afectación"
+
+#. module: hr_novelty
+#: selection:hr.novelty,start_date_period:0
+msgid "Afternoon"
+msgstr "Tarde"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,affectation:0
+msgid "Allowance"
+msgstr "Asignación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: hr_novelty
+#: selection:hr.module.you,function:0
+msgid "Any"
+msgstr "Cualquiera"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_aplica_fecha_final
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_aplica_fecha_final
+msgid "Aplica Fecha Final"
+msgstr ""
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Approval"
+msgstr "Aprobacion"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_tree_notifications_to_approve
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty_notifications_approved
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_novelty_notifications_approved
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__approved_by
+msgid "Approved By"
+msgstr "Aprobado por"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Approved Data Sign"
+msgstr "Datos de aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__approved_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__approved_ip_date
+msgid "Approved Date"
+msgstr "Fecha aprobada"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__approved_ip_from
+msgid "Approved IP From"
+msgstr "IP Aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__approved_location
+msgid "Approved Location"
+msgstr "Lugar de aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__approver
+msgid "Approver"
+msgstr "Aprobador"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_ir_attachment
+msgid "Attachment"
+msgstr "Adjunto"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_attachment_count
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_attachment_count
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_attachment_count
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de archivos adjuntos"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__attachment_required
+msgid "Attachment Required"
+msgstr "Adjunto Requerido"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,approver:0
+msgid "BP"
+msgstr "BP"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__bank_account_id
+msgid "Bank Account"
+msgstr "Cuenta bancaria"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__bank_account_id
+msgid "Bank Account Number"
+msgstr "Número de Cuenta Bancaria"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Cuentas bancarias"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_base_import_import
+msgid "Base Import"
+msgstr "Importar Base"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__birth_certificate
+msgid "Birth Certificate"
+msgstr "Certificado de nacimiento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__calendar_type
+msgid "Calendar Type"
+msgstr "Tipo de Calendario"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.novelty_create_contact_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.novelty_create_contract_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.novelty_create_employee_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.reject_wizard_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_novelty
+#: selection:hr.novelty.job,state:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Carné Diplomatico"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__certificate_born_alive
+msgid "Certificate Born Alive"
+msgstr "Certificado nacido vivo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__certificate_week_of_gestation
+msgid "Certificate Week Of Gestation"
+msgstr "Certificado de semana de gestación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__city_id
+msgid "City"
+msgstr "Ciudad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__code
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__company_only
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__company_only
+msgid "Company Only"
+msgstr "Solo Compañía"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__level_id
+msgid "Competition Level Language"
+msgstr "Idioma de nivel de competencia"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__confidential
+msgid "Confidential"
+msgstr "Confidencial"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_view_form
+msgid "Configuration Template Add fields"
+msgstr "Configuración plantilla de campos"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.novelty_create_contact_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.novelty_create_contract_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.novelty_create_employee_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.reject_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__contact_id
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Contract Completion Section"
+msgstr "Sección de finalización del contrato"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Contribution"
+msgstr "Contribución"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__country_of_birth
+msgid "Country of Birth"
+msgstr "País de Nacimiento"
+
+#. module: hr_novelty
+#: model_terms:ir.actions.act_window,help:hr_novelty.action_hr_novelty
+msgid "Crear un nuevo documento"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_novelty_create_contact
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Create Contact"
+msgstr "Crear Contacto"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_novelty_create_contract
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Create Contract"
+msgstr "Crear Contrato"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_novelty_create_employee
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Create Employee"
+msgstr "Crear empleado"
+
+#. module: hr_novelty
+#: selection:hr.module.you,function:0
+msgid "Create Pending"
+msgstr "Creación pendiente"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Create Recruitment"
+msgstr "Crear reclutamiento"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Create Subcontract"
+msgstr "Crear subcontrato"
+
+#. module: hr_novelty
+#: selection:hr.module.you,function:0
+msgid "Created"
+msgstr "Creado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__create_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__create_date
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: hr_novelty
+#: selection:res.partner.bank,type:0
+msgid "Current"
+msgstr "Corriente"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Cédula"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Cédula Extranjera"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Cédula de ciudadanía"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,approver:0
+msgid "DAF"
+msgstr ""
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Data Sign"
+msgstr "Data"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__date
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Date"
+msgstr "Fecha"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__birthday
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,affectation:0
+msgid "Deduction"
+msgstr "Deducción"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__department_id
+msgid "Department"
+msgstr "Departamento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__description
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__description
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__description
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__description
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__description
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Details"
+msgstr "Detalles"
+
+#. module: hr_novelty
+#: selection:hr.novelty,hiring_type:0
+msgid "Direct"
+msgstr "Directo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__display_name
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__vat
+msgid "Document Number"
+msgstr "Número de documento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__l10n_co_document_type
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Documents Section"
+msgstr "Sección de documentos"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave__is_eps
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_eps
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__eps_id
+msgid "EPS"
+msgstr "EPS"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__email
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,calendar_type:0
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__employee_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__employee_id
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__end_business_day
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_end_business_day
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_end_business_day
+msgid "End Business Day"
+msgstr "Fecha fin empresa"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__end_date
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Entities"
+msgstr "Entidades"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__event_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__event_id
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_config_novelty_event
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Event"
+msgstr "Evento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__experience_id
+msgid "Experience Time"
+msgstr "Tiempo de experiencia"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Extra"
+msgstr "Extra"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__relationship_id
+msgid "Family Relationship"
+msgstr "Relacion familiar"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,gender:0
+msgid "Female"
+msgstr "Mujer"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Fideicomiso"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__field_ids
+msgid "Field"
+msgstr "Campo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__field_id
+msgid "Fields"
+msgstr "Campos"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__file_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__file_name
+msgid "File Name"
+msgstr "Nombre del archivo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__first_name
+msgid "First Name"
+msgstr "Primer Nombre"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__fix_wage_amount
+msgid "Fix Wage Amount"
+msgstr "Monto de Salario Fijo"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/wizard/novelty_create_contract.py:37
+#, python-format
+msgid "Fix Wage Assign should be positive."
+msgstr "Sueldo Fijo debe ser positiva"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__Fix_wage_assing
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__Fix_wage_assing
+msgid "Fix Wage Assing"
+msgstr "Asignación Sueldo Fijo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__flex_wage_amount
+msgid "Flex Wage Amount"
+msgstr "Monto de Salario Flexible"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_follower_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_follower_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_follower_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_channel_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_channel_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_channel_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_partner_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_partner_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_partner_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Empresas)"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__found_layoffs_id
+msgid "Found Layoffs"
+msgstr "Fondo de Cesantias"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,calendar_type:0
+msgid "Full Calendar"
+msgstr "Calendario"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__function
+msgid "Function"
+msgstr "Función"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__function_executed_id
+msgid "Function Executed"
+msgstr "Función ejecutada"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__gender
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "General Configuration"
+msgstr "Configuracion General"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__group_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__group_ids
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Group"
+msgstr "Grupo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_view_form
+msgid "Group Fields"
+msgstr "Grupo de campos"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Group Function"
+msgstr "Grupo de funciones"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Group Name"
+msgstr "Nombre del grupo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Group Parent"
+msgstr "Grupo padre"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Group Type"
+msgstr "Tipo de grupo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Group.."
+msgstr "Grupo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Groups Allowed for Creation"
+msgstr "Grupos permitidos para Creación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__grupo_de_seguidores_ids
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Grupo de seguidores"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__h_e_procedimiento
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_h_e_procedimiento
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_h_e_procedimiento
+msgid "H.E Procedimiento"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__family_id
+msgid "HR CV Family"
+msgstr "Relacion familiar"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_employee
+msgid "HR Employee"
+msgstr "HR Empleado"
+
+#. module: hr_novelty
+#: model:ir.ui.menu,name:hr_novelty.hr_experience_time_menu_novelty_action
+msgid "HR Experience Time"
+msgstr "HR Tiempo de Experiencia"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__hr_job_id
+msgid "HR Job"
+msgstr "HR Trabajo"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_module_you_action
+#: model:ir.model,name:hr_novelty.model_hr_module_you
+#: model:ir.ui.menu,name:hr_novelty.hr_module_you_menu_action
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_view_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_view_tree
+msgid "HR Module YOU"
+msgstr "Módulo de YOU"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty_event
+msgid "HR Novelty Event"
+msgstr "Eventos"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty_stage_followers
+msgid "HR Novelty Stage Followers"
+msgstr "Seguidores"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty_type_subtype
+msgid "HR Novelty Subtype"
+msgstr "Sub-Tipo"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty_type
+msgid "HR Novelty Type"
+msgstr "Tipo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__unit_half
+msgid "Half Day"
+msgstr "Medio día"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__hiring_type
+msgid "Hiring Type"
+msgstr "Tipo de contratación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_horas_fijas
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_horas_fijas
+msgid "Horas Fijas"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_leave_code_action
+#: model:ir.model,name:hr_novelty.model_hr_leave_code
+#: model:ir.ui.menu,name:hr_novelty.hr_leave_code_menu_action
+msgid "Hr Leave Code"
+msgstr "HR Dejar código"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__hr_module_you_id
+msgid "Hr Module You"
+msgstr "Módulo de YOU"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Hr Novelty"
+msgstr "HR Novedad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_job__hr_novelty_job_ids
+msgid "Hr Novelty Job"
+msgstr "HR Novedades de Trabajo"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_you_fields
+#: model:ir.ui.menu,name:hr_novelty.hr_you_fields_menu_action
+msgid "Hr You Fields"
+msgstr "Campos de YOU"
+
+#. module: hr_novelty
+#: model:ir.ui.menu,name:hr_novelty.hr_you_fields_types_menu_action
+msgid "Hr You Fields Type"
+msgstr "Tipo de campos YOU"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_you_fields_type_conf
+#: model:ir.ui.menu,name:hr_novelty.hr_you_fields_type_conf_menu_action
+msgid "Hr You Fields Type Conf"
+msgstr "Configuración de tipo de campos YOU"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_you_fields_types
+msgid "Hr You Fields Types"
+msgstr "Tipos de campos YOU"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_you_type
+#: model:ir.ui.menu,name:hr_novelty.hr_you_type_menu_action
+msgid "Hr You Type"
+msgstr "Tipo YOU"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__id
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__id
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__id
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__id
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__id
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "ID del Exterior"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__ip_from
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "IP From"
+msgstr "IP origen"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__identification_id
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Identification No"
+msgstr "Nº identificación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__message_unread
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__message_unread
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__message_unread
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__message_needaction
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__message_needaction
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__message_needaction
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención."
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__message_has_error
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__message_has_error
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__message_has_error
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__support_attachment_url
+msgid "Image URL"
+msgstr "URL de la imagen"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "In"
+msgstr "Dentro"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__increase_salary
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__increase_salary
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Increase Salary"
+msgstr "Aumentar el salario"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_is_follower
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_is_follower
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_is_follower
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_is_follower
+msgid "Is Follower"
+msgstr "Es un seguidor"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,approver:0
+msgid "Jefe Directo"
+msgstr "Jefe Directo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__job_id
+msgid "Job"
+msgstr "Puesto"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_job
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__job_id
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__job_title
+msgid "Job Title"
+msgstr "Título del trabajo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__language_id
+msgid "Language"
+msgstr "Idioma"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_language_level_details
+msgid "Language Level Details"
+msgstr "Detalles del nivel de idioma"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__language_level_ids
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Language/Level Details"
+msgstr "Detalles de idioma / nivel"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:881
+#, python-format
+msgid "Las novedades no se pueden cargar en estado aprobado."
+msgstr "Las novedades no se pueden cargar en estado aprobado."
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract____last_update
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__write_uid
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__write_date
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_leave
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__leave_id
+msgid "Leave"
+msgstr "Ausencia"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__leave_code_id
+msgid "Leave Code"
+msgstr "Dejar código"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__leave_message
+msgid "Leave Message"
+msgstr "Deja un mensaje"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__leave_type_id
+msgid "Leave Type"
+msgstr "Tipo de ausencia"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "License Attachment"
+msgstr "Adjunto de licencia"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__limit_advance
+msgid "Limit Advance"
+msgstr "Límite de asignación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__restriction_day
+msgid "Limit day of the month to create a \"novedad\" of this type"
+msgstr "Fecha limite para crear una novedad de este tipo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__location
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_user_appr
+msgid "Logged user is the approver"
+msgstr "Usuario conectado es el aprobador"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_sec_appr_user
+msgid "Logged user is the second approver"
+msgstr "El usuario registrado es el segundo aprobador"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__macro_area_id
+msgid "Macro Area"
+msgstr "Macro Area"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,gender:0
+msgid "Male"
+msgstr "Hombre"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__parent_id
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: hr_novelty
+#: model:ir.actions.server,name:hr_novelty.action_massive_approval
+msgid "Massive Approval"
+msgstr "Aprobacion Masiva"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__max_days
+msgid "Max Days"
+msgstr "Días Max"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__max_days
+msgid "Maximun limit for the days in the \"Novedad\""
+msgstr "Límite máximo de días permitidos para este tipo de novedad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_check_date_wizard__message
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__message
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_has_error
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_has_error
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_has_error
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__min_days
+msgid "Min Days"
+msgstr "Días Min"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__min_days
+msgid "Minimun limit for the days in the \"Novedad\""
+msgstr "Límite mímino de días permitidos para este tipo de novedad"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:652
+#, python-format
+msgid "Mismatch Date"
+msgstr "Fecha de falta de coincidencia"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__mobile
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: hr_novelty
+#: selection:hr.novelty,start_date_period:0
+msgid "Morning"
+msgstr "Mañana"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.motivo_talento_action
+#: model:ir.model,name:hr_novelty.model_motivo_talento
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__motivo_talento_id
+#: model:ir.ui.menu,name:hr_novelty.motivo_talento_menu_action
+msgid "Motivo Talento"
+msgstr "Motivo Talento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_motivo_de_retiro
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_motivo_de_retiro
+msgid "Motivo de Retiro"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "N.I.T."
+msgstr ""
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "NIT"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave_code__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_types__name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_type__name
+#: model:ir.model.fields,field_description:hr_novelty.field_motivo_talento__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Name.."
+msgstr "Nombre..."
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__country_id
+msgid "Nationality (Country)"
+msgstr "Nacionalidad (País)"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:41
+#: code:addons/hr_novelty/models/hr_novelty.py:455
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__new_recruitment
+msgid "New Recruitment"
+msgstr "Nuevo reclutamiento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Siguiente plazo de actividad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Nit Extranjería"
+msgstr "Nit Extranjería"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Nit persona natural"
+msgstr "Nit persona natural"
+
+#. module: hr_novelty
+#: selection:hr.novelty.job,state:0
+msgid "Not Recruitment"
+msgstr "No reclutamiento"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty_notifications_all
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_novelty_notifications_all
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_employee.py:32
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__novelty_id
+#: model:ir.model.fields,field_description:hr_novelty.field_language_level_details__novelty_id
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_config_novelty
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_novelty
+#, python-format
+msgid "Novelty"
+msgstr "Novedad"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty_check_date_wizard
+msgid "Novelty Check Date"
+msgstr "Fecha de comprobación de novedad"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_novelty_create_contact
+msgid "Novelty Create Contact"
+msgstr "Crear contacto"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_novelty_create_contract
+msgid "Novelty Create Contract"
+msgstr "Crear contrato"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_novelty_create_employee
+msgid "Novelty Create Employee"
+msgstr "Crear empleado"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty_event
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__event_id
+#: model:res.groups,name:hr_novelty.group_novelty_event
+msgid "Novelty Event"
+msgstr "Evento"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:717
+#, python-format
+msgid "Novelty Event doesn't have enough Limit Advance Days : %d assigned. Please review the process before continue."
+msgstr "El evento novedoso no tiene suficientes días límite de avance:% d asignados. Revise el proceso antes de continuar."
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:765
+#, python-format
+msgid "Novelty Event doesn't have enough Projection Vacation leaves. Please review the process before continue."
+msgstr "Novedad Evento no tiene suficientes permisos de vacaciones de proyección. Revise el proceso antes de continuar."
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_novelty_job_action
+#: model:ir.model,name:hr_novelty.model_hr_novelty_job
+#: model:ir.ui.menu,name:hr_novelty.hr_novelty_job_menu_action
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_job_form_view_inherit_extended
+msgid "Novelty Job"
+msgstr "Novedad trabajo"
+
+#. module: hr_novelty
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_novelty_notifications
+msgid "Novelty Notifications"
+msgstr "Notificación de novedades"
+
+#. module: hr_novelty
+#: model:res.groups,name:hr_novelty.group_novelty_process
+msgid "Novelty Process"
+msgstr "Novedades en el Proceso"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_leave__novelty_ref
+msgid "Novelty Reference"
+msgstr "Referencia de novedad"
+
+#. module: hr_novelty
+#: model:ir.model,name:hr_novelty.model_hr_novelty_reject_wizard
+msgid "Novelty Reject Wizard"
+msgstr "Asistente de Rechazo de Novedad"
+
+#. module: hr_novelty
+#: model:res.groups,name:hr_novelty.group_novelty_reject_to_draft
+msgid "Novelty Reject to Draft"
+msgstr "Cambiar de rechazado a borrador"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_view_stage_followers
+msgid "Novelty Stage Followers"
+msgstr "Seguidores de Novedad"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty_subtype
+msgid "Novelty Subtype"
+msgstr "SubTipo de Novedad"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty_type
+msgid "Novelty Type"
+msgstr "Tipo de Novedad"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_employee_form_novelty_inherit
+msgid "Novelty(s)"
+msgstr "Novedad (s)"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:567
+#, python-format
+msgid "Novelty:-  has a problem for approval"
+msgstr "Novedad: - tiene un problema para aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de error"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__message_needaction_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__message_needaction_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__message_needaction_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__message_has_error_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__message_has_error_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__message_has_error_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__message_unread_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__message_unread_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__message_unread_counter
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leidos"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.check_date_wizard
+msgid "OK"
+msgstr "Correcto"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__observation_increase
+msgid "Observation Increase"
+msgstr "Observación de incremento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__observation_recruitment
+msgid "Observation Recruitment"
+msgstr "Observación de reclutamiento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__leave_type_id
+msgid "Only if event is a leave"
+msgstr "Solo si el evento es una Ausencia"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_optional_approver
+msgid "Optional Approver"
+msgstr "Aprobador Opcional"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_optional_approver_2
+msgid "Optional Approver 2"
+msgstr "Segundo aprobador opcional"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__optional_approver_group_id
+msgid "Optional Approver Group"
+msgstr "Grupo Aprobador Opcional"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__optional_approver2_group_id
+msgid "Optional Approver2 Group"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__original_maternity_leave
+msgid "Original Maternity Leave"
+msgstr "Licencia de maternidad original"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,gender:0
+msgid "Other"
+msgstr "Otro"
+
+#. module: hr_novelty
+#: selection:hr.novelty,activity_state:0
+msgid "Overdue"
+msgstr "Atrasado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__parent_id
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Parent"
+msgstr "Padre"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__partner_id
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_account_setup_bank_manual_config__partner2_id
+#: model:ir.model.fields,field_description:hr_novelty.field_res_partner_bank__partner2_id
+msgid "Partner 2"
+msgstr "Empresa"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Pasaporte"
+msgstr "Pasaporte"
+
+#. module: hr_novelty
+#: selection:hr.novelty.job,state:0
+msgid "Pause"
+msgstr "Pausa"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__pension_fund_id
+msgid "Pension Fund"
+msgstr "Fondo de Pensiones"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__place_of_birth_id
+msgid "Place of Birth"
+msgstr "Lugar de nacimiento"
+
+#. module: hr_novelty
+#: selection:hr.novelty,activity_state:0
+msgid "Planned"
+msgstr "Planificado"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:584
+#, python-format
+msgid "Please enter Contact"
+msgstr "Por favor ingrese el contacto"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:590
+#, python-format
+msgid "Please enter Contract"
+msgstr "Por favor ingrese el contrato"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:587
+#, python-format
+msgid "Please enter Employee"
+msgstr "Por favor ingrese el empleado"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:501
+#: code:addons/hr_novelty/models/hr_novelty.py:521
+#, python-format
+msgid "Please fill end date."
+msgstr "Por favor complete la fecha de finalización."
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:1015
+#, python-format
+msgid "Por favor indique en el campo descripción cual es el motivo."
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__prepaid_medicine_id
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__prepaid_medicine_id
+msgid "Prepaid Medicine"
+msgstr "Medicina prepagada 1"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__prepaid_medicine2_id
+msgid "Prepaid Medicine 2"
+msgstr "Medicina prepagada 2"
+
+#. module: hr_novelty
+#: model:ir.actions.server,name:hr_novelty.action_process
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Process"
+msgstr "Procesar"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Processed"
+msgstr "Procesado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__project_type
+msgid "Project Type"
+msgstr "Tipo de proyecto"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__projection_vacation
+msgid "Projection Vacation"
+msgstr "Proyectar vacaciones"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__hr_novelty_job_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_recruitment
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_recruitment
+msgid "Recruitment"
+msgstr "Reclutamiento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_contract__recruitment_reason_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__recruitment_reason_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__recruitment_reason_id
+msgid "Recruitment Reasons"
+msgstr "Razones de reclutamiento"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Recruitment State"
+msgstr "Estado de reclutamiento"
+
+#. module: hr_novelty
+#: selection:hr.novelty.job,state:0
+msgid "Recruitment in Progress"
+msgstr "Reclutamiento en progreso"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__reference_module
+msgid "Reference Module"
+msgstr "Módulo de referencia"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Reference Module.."
+msgstr "Módulo de referencia"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Registro Civil"
+msgstr "Registro Civil"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_tree_notifications_to_approve
+msgid "Reject"
+msgstr "Rechazar"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__reject_reason
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_reject_wizard__reject_reason
+msgid "Reject Reason"
+msgstr "Motivo de Rechazo"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__requered_account
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__requered_account
+msgid "Requered Account"
+msgstr "Cuenta solicitada"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__requered_attachment_lic
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__requered_attachment_lic
+msgid "Requered Attachment Lic"
+msgstr "Adjunto Solicitado Lic"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_requiere_adjunto
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_requiere_adjunto
+msgid "Requiere Adjunto"
+msgstr "Requiere Adjunto"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__responsible_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__responsible_required
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__responsible_required
+msgid "Responsible Required"
+msgstr "Responsable Requerido"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__restriction_day
+msgid "Restriction Day"
+msgstr "Día Límite"
+
+#. module: hr_novelty
+#: selection:hr.novelty.event,approver:0
+msgid "SST"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__struct_id
+msgid "Salary Structures"
+msgstr "Estructuras salariales"
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Salvoconducto de Permanencia"
+msgstr ""
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__sara
+msgid "Sara"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:res.partner.bank,type:0
+msgid "Savings"
+msgstr "Ahorros"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Sección de reclutamiento"
+msgstr ""
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Second Approve"
+msgstr "Segunda Aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__second_approver_group_id
+msgid "Second Approver Group"
+msgstr "Grupo de Segunda Aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__second_approver_required
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Second Approver Required"
+msgstr "Segunda Aprobación Requerida"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__second_name
+msgid "Second Name"
+msgstr "Segundo Nombre"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__second_surname
+msgid "Second Surname"
+msgstr "Segundo apellido"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__name
+msgid "Sequence Name"
+msgstr "Secuencia"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Set to Approve"
+msgstr "Establecer para aprobar"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+msgid "Set to Draft"
+msgstr "Cambiar a borrador"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__show
+msgid "Show"
+msgstr "Mostrar"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__show_you
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__show_you
+msgid "Show You"
+msgstr "Ver en YOU"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Show is False"
+msgstr ""
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Show is True"
+msgstr ""
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Sociedad extranjera sin N.I.T. En Colombia"
+msgstr ""
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:576
+#, python-format
+msgid ""
+"Some Novelties are not in the Wait/Wait for Comments or may be Logged user is the approver is False.\n"
+" Novelties:- "
+msgstr ""
+"Algunas novedades no se encuentran en Esperar / Esperar comentarios o pueden estar registradas. El usuario que aprueba es falso.\n"
+" Novedades:-"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__stage
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: hr_novelty
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_config_novelty_stage_followers
+msgid "Stage Followers"
+msgstr "Seguidores"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__start_date_period
+msgid "Start Date Period"
+msgstr "Periodo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__hr_novelty_job_id_state
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__state
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_job__state
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__state_id
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__state_of_birth_id
+msgid "State of Birth"
+msgstr "Estado de nacimiento"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Status"
+msgstr "Estado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencida: la fecha tope ya ha pasado\n"
+"Hoy: La fecha tope es hoy\n"
+"Planificada: futuras actividades."
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__subtype_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__subtype_id
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_config_novelty_subtype
+msgid "Sub-Type"
+msgstr "SubTipo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__subcontract
+msgid "Subcontract?"
+msgstr "¿Subcontratar?"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Subtype"
+msgstr "Subtipo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__support
+msgid "Support"
+msgstr "Soporte"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__support_name
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__support_name
+msgid "Support Name"
+msgstr "Nombre del soporte"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__support_size
+msgid "Support Size"
+msgstr "Tamaño"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__support_attachment_url
+msgid "Support URL"
+msgstr "Soporte de URL"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contact__surname
+msgid "Surname"
+msgstr "Primer Apellido"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__tag
+msgid "Tag"
+msgstr "Etiqueta"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.hr_module_you_search
+msgid "Tag.."
+msgstr "Etiqueta.."
+
+#. module: hr_novelty
+#: selection:novelty.create.contact,l10n_co_document_type:0
+msgid "Tarjeta de Identidad"
+msgstr "Tarjeta de Identidad"
+
+#. module: hr_novelty
+#: selection:hr.novelty,hiring_type:0
+msgid "Temporary"
+msgstr "Temporal"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:419
+#, python-format
+msgid "The start date cannot occur after end date"
+msgstr "La fecha de inicio no puede suceder después de la fecha fin"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:465
+#, python-format
+msgid "This event requires an attachment"
+msgstr "Este evento requiere un adjunto"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__calendar_type
+msgid "This is the way the total days are calculated:Based on Employee's Calendar or Full Calendar"
+msgstr "Así se calculan los días totales: según el calendario del empleado o el calendario completo"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:597
+#, python-format
+msgid "This user can't approve. He/She is not in the group %s"
+msgstr "Este usuario no puede aprobar. No está en en el grupo %s"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:929
+#, python-format
+msgid "This user has no access right to create Novelty."
+msgstr "El usuario no tiene acceso a crear novedades"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:953
+#, python-format
+msgid "This user has no access right to write Novelty."
+msgstr "Este usuario no tiene derecho de acceso para escribir Novedad."
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+msgid "Time Configuration"
+msgstr "Configuracion de tiempo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__is_tipo_de_incapacidad
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__is_tipo_de_incapacidad
+msgid "Tipo de Incapacidad"
+msgstr "Tipo de Incapacidad"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.action_hr_novelty_notifications_to_approve
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_novelty_notifications_to_approve
+msgid "To Approve"
+msgstr "Para aprobar"
+
+#. module: hr_novelty
+#: selection:hr.novelty,activity_state:0
+msgid "Today"
+msgstr "Hoy"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__total_days
+msgid "Total Days"
+msgstr "Días Totales"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__total_fix_hours
+msgid "Total Fix Hours"
+msgstr "Horas totales de reparación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__total_horas_fijas
+msgid "Total Horas Fijas"
+msgstr "Total Horas Fijas"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__total_hours
+msgid "Total Hours"
+msgstr "Total Horas"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_employee__total_remaining_approve_novelty
+msgid "Total Remaining Approve Novelty"
+msgstr "Total restante Aprobar Novedad"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__transfer_employee
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__transfer_employee
+msgid "Transfer Employee"
+msgstr "Transferir empleado"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_module_you__type
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__type_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__type_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__type_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields__type_id
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_you_fields_type_conf__type_id
+#: model:ir.ui.menu,name:hr_novelty.menu_hr_config_novelty_type
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__upc
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__upc
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "UPC"
+msgstr "UPC"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__unemployment_fund_id
+msgid "Unemployment Fund"
+msgstr "Fondo de Desempleo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__unjustified
+msgid "Unjustified"
+msgstr "Sin causa justa"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_unread
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_unread
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_unread
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes por leer"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__message_unread_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__message_unread_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__message_unread_counter
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes sin leer"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_stage_followers__partner_id
+msgid "User"
+msgstr "Usuario"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__voluntary_contribution_id
+msgid "Voluntary Contribution"
+msgstr "Contribución voluntaria"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__wage
+msgid "Wage"
+msgstr "Salario"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__wage_assign
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_contract__wage_assign
+msgid "Wage Assign"
+msgstr "Salario asignado"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/wizard/novelty_create_contract.py:35
+#, python-format
+msgid "Wage Assign should be positive."
+msgstr "El salario asignado debe ser positivo"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Wait"
+msgstr "En espera"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+msgid "Wait for Comments"
+msgstr "Esperando Comentarios"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Wait for comments"
+msgstr "Esperando comentarios"
+
+#. module: hr_novelty
+#: selection:hr.novelty,state:0
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_search
+msgid "Waiting Second Approval"
+msgstr "Esperando Segunda Aprobación"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__website_message_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__website_message_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type__website_message_ids
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_type_subtype__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__website_message_ids
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_event__website_message_ids
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type__website_message_ids
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty_type_subtype__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicaciones del sitio web"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__address_id
+msgid "Work Address"
+msgstr "Dirección de trabajo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__work_email
+msgid "Work Email"
+msgstr "Correo-e del trabajo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty__work_group_id
+#: model:ir.model.fields,field_description:hr_novelty.field_novelty_create_employee__work_group_id
+msgid "Work Group"
+msgstr "Grupo de trabajo"
+
+#. module: hr_novelty
+#: model:ir.model.fields,field_description:hr_novelty.field_hr_novelty_event__you_model_id
+msgid "YOU Model"
+msgstr "Modulo de YOU"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_you_fields_action
+msgid "You Fields"
+msgstr "Campos de YOU"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_you_fields_types_action
+msgid "You Fields Type"
+msgstr "Tipo de campos de YOU"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_you_fields_type_conf_action
+msgid "You Fields Type Conf"
+msgstr "Configuración tipo de campos de YOI"
+
+#. module: hr_novelty
+#: model:ir.actions.act_window,name:hr_novelty.hr_you_type_action
+msgid "You Type"
+msgstr "Tipo YOU"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:783
+#, python-format
+msgid "You are not allowed for this process!"
+msgstr "¡No tienes permiso para este proceso!"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:352
+#, python-format
+msgid "You cannot create two novelty with the same Employee and Start Date and End Date mix."
+msgstr "No puede crear dos novedades con en el mismo rango de Fecha de inicio y Fecha de finalización."
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_form_notifications
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_tree
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_tree_notifications_all
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_tree_notifications_approved
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_tree_notifications_to_approve
+msgid "hr.novelty"
+msgstr "Novedad"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_event_tree
+msgid "hr.novelty.event"
+msgstr "Evento"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.reject_wizard_form
+msgid "hr.novelty.reject.wizard.form"
+msgstr "Asistente de Rechazo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_subtype_form
+msgid "hr.novelty.subtype"
+msgstr "SubTipo"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_type_form
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_type_tree
+msgid "hr.novelty.type"
+msgstr "Tipo de Novedad"
+
+#. module: hr_novelty
+#: model_terms:ir.ui.view,arch_db:hr_novelty.view_hr_novelty_subtype_tree
+msgid "hr.novelty.type.subtype"
+msgstr "Novedad tipo subtipo"
+
+#. module: hr_novelty
+#: code:addons/hr_novelty/models/hr_novelty.py:319
+#, python-format
+msgid "the amount of days exceeds (default or excess) the event limit"
+msgstr "La cantidad de días excede (por defecto o exceso) el límite configurado para el evento"
+
+#. module: hr_novelty
+#: model:ir.model.fields,help:hr_novelty.field_hr_novelty__partner_id
+msgid "third party who owns the debt"
+msgstr "Tercero que es acreedor del embargo o deuda"

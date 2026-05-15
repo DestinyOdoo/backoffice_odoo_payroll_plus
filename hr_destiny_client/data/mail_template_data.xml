@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<odoo>
+        <record id="email_template_contract_ending_notification" model="mail.template">
+            <field name="name">Notification: Contract ending</field>
+            <field name="model_id" ref="hr_contract.model_hr_contract"/>
+            <field name="email_from">{{ (object.employee_id.work_email and object.partner_id.work_email) }}</field>
+            <field name="subject">Contract Ending: {{object.name}}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="text-align: left;">
+                        <font style="font-size: 24px;"><b>Contract Ending: <span t-out="object.name"/></b></font>
+                    </p>
+
+                    <p style="text-align: left;">
+                        <font style="font-size: 14px;">
+                            This Contract is about to End.</font>
+                    </p>
+                </div>
+            </field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+</odoo>

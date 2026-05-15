@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Animal Pet Form View -->
+   <record id="hr_job_specialization_view_form" model="ir.ui.view">
+        <field name="name">hr.job.specialization</field>
+        <field name="model">hr.job.specialization</field>
+        <field name="arch" type="xml">
+            <form string="HR Job Specialization">
+                <sheet>
+                    <group colspan="4" col="4">
+                        <field name="name" required="1"/>
+                        <field name="code"/>
+                        <field name="job_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- HR Job Specialization Tree View -->
+    <record id="hr_job_specialization_view_tree" model="ir.ui.view">
+        <field name="name">hr.job.specialization.list</field>
+        <field name="model">hr.job.specialization</field>
+        <field name="arch" type="xml">
+            <tree string="HR Job Specialization">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="job_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- HR Job Specialization Action -->
+    <record id="hr_job_specialization_action" model="ir.actions.act_window">
+        <field name="name">HR Job Specialization</field>
+        <field name="res_model">hr.job.specialization</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- HR Job Specialization Menuitem -->
+    <menuitem
+        id="hr_job_specialization_menu_action"
+        name="HR Job Specialization"
+        groups="hr.group_hr_user"
+        action="hr_job_specialization_action"
+        parent="hr.menu_human_resources_configuration"/>
+
+</odoo>

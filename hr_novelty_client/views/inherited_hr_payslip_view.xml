@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="hr_holidays.hr_holidays_menu_manager_payroll"
+        name="Payroll"
+        parent="hr_holidays.hr_holidays_menu_manager_approve_allocations"
+        groups="hr_holidays.group_hr_holidays_manager,hr_holidays.group_hr_holidays_user"
+        sequence="3"/>
+
+    <menuitem
+        action="hr_payroll.action_view_hr_payslip_form"
+        id="hr_payroll.menu_department_tree"
+        parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"
+        groups="hr_payroll.group_hr_payroll_user"/>
+        <!-- (hr_payroll) -->
+        
+    <menuitem action="hr_payroll.action_hr_payslip_run_tree"
+              id="hr_payroll.menu_hr_payslip_run"
+              parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"/>
+              <!-- (hr_payroll) -->
+
+    <menuitem id="hr_payroll.menu_hr_payroll_root"
+              name="Payroll"
+              sequence="45"
+              web_icon="hr_payroll,static/description/icon.png"
+              groups="hr_payroll.group_hr_payroll_manager,hr_payroll.group_hr_payroll_user"/>
+
+</odoo>

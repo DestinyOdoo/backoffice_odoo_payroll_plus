@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Compatibilidad con XMLIDs del módulo legado hr_employee_extended -->
+    <record id="legacy_xmlid_hr_curriculum_vitae_menu" model="ir.model.data">
+        <field name="module">hr_employee_extended</field>
+        <field name="name">hr_curriculum_vitae_menu</field>
+        <field name="model">ir.ui.menu</field>
+        <field name="res_id" eval="ref('hr_employee_extended_client.hr_curriculum_vitae_menu')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+
+    <record id="legacy_xmlid_report_export_main_menu" model="ir.model.data">
+        <field name="module">hr_employee_extended</field>
+        <field name="name">report_export_main_menu</field>
+        <field name="model">ir.ui.menu</field>
+        <field name="res_id" eval="ref('hr_employee_extended_client.report_export_main_menu')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+
+    <record id="legacy_xmlid_report_employee_wizard_action" model="ir.model.data">
+        <field name="module">hr_employee_extended</field>
+        <field name="name">report_employee_wizard_action</field>
+        <field name="model">ir.actions.act_window</field>
+        <field name="res_id" eval="ref('hr_employee_extended_client.report_employee_wizard_action')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+
+    <record id="legacy_xmlid_view_hr_employee_form_employee_extended_inherit" model="ir.model.data">
+        <field name="module">hr_employee_extended</field>
+        <field name="name">view_hr_employee_form_employee_extended_inherit</field>
+        <field name="model">ir.ui.view</field>
+        <field name="res_id" eval="ref('hr_employee_extended_client.view_hr_employee_form_employee_extended_inherit')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+</odoo>

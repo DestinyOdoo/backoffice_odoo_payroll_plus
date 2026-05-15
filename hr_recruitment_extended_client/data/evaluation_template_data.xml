@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+        <record id="email_template_evaluation" model="mail.template">
+            <field name="name">Personal Competences Analysis</field>
+            <field name="model_id" ref="hr_recruitment_extended_client.model_hr_evaluation"/>
+            <field name="subject">Personal Competences Analysis</field>
+            <field name="email_from">{{ object.user.email }}</field>
+            <field name="email_to">{{ object.hr_applicant_id.partner_id.email }}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size: 14px;">
+                    <p style="margin: 0px; padding: 0px;">
+                        Dear <span t-esc="object.hr_applicant_id.partner_id.name"/>,
+                        <br/><br/>
+                        Here we are providing the link for the <b>Personal Competences Analysis</b>.
+                        Please complete this test first.
+                        <br/><br/>
+                        <a href="object.PcaLink">Click for start </a>
+                        <br/><br/>
+                        from <span t-esc="object.hr_applicant_id.company_id.name"/>.
+                        If you have any questions, please do not hesitate to contact us.
+                        <br/><br/>
+                        Best regards,
+                    </p>
+                </div>
+            </field>
+        </record>
+</odoo> 

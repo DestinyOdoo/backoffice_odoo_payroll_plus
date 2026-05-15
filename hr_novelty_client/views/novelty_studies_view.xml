@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="novelty_studies_view_tree" model="ir.ui.view">
+        <field name="name">novelty.studies.view.tree</field>
+        <field name="model">novelty.studies</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="hr_novelty_id"
+                       required="1"
+                       options="{'no_create': True, 'no_create_edit': True}"/>
+                <field name="name" required="1"/>
+                <field name="level" required="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="novelty_studies_action" model="ir.actions.act_window">
+        <field name="name">Level of Studies</field>
+        <field name="res_model">novelty.studies</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem
+        id="novelty_studies_menu_action"
+        name="Level of Studies"
+        action="novelty_studies_action"
+        parent="hr_novelty_client.menu_hr_config_novelty"/>
+
+</odoo>

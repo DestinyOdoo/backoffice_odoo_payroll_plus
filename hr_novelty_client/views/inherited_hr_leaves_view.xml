@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="hr_holidays.hr_holidays_menu_manager_payroll"
+        name="Payroll"
+        parent="hr_holidays.menu_hr_holidays_management"
+        groups="hr_holidays.group_hr_holidays_manager,hr_holidays.group_hr_holidays_user"
+        sequence="3"/> 
+
+</odoo> 

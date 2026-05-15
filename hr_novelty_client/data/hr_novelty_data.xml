@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="email_template_novelties_approval_reminder" model="mail.template">
+            <field name="name">Novelties Approval Reminder</field>
+            <field name="model_id" ref="model_hr_novelty"/>
+            <field name="email_from">{{ object.company_id.email or 'admin@wsuite.com' }}</field>
+            <field name="subject">Novelties Approval Reminder</field>
+            <field name="body_html" type="html">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <meta content="telephone=no" name="format-detection"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+                
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+                    @media screen and (max-width: 500px) {
+                        .table-container {
+                            width: 100% !important;
+                        }
+                    }
+                    @media only screen and (max-width:480px) {
+                        .em_hide {
+                            display: none !important;
+                        }
+                        br[class=em_hide] {
+                            display: none !important;
+                        }
+                    }
+                </style>
+
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table style="table-layout:fixed;" class="table-container" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td style="margin: 0;padding: 0;" valign="top" align="center">
+                                                <table style="margin: 0;padding: 0;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" bgcolor="#fcf7fd" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#fcf7fd" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px;line-height: 1px;" height="30">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="center">
+                                                                                <img src="https://s3.amazonaws.com/production-assets.wsuite.com/u-logo.png" alt="u-logo" style="border-image-width:1;border-image-source:none;border-image-slice:100%;border-image-repeat:stretch;border-image-outset:0;display: block;vertical-align: middle;" class="img-thumbnail o_we_selected_image" width="60" height="60" border="0"/>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px;line-height: 1px;" height="27">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-family:'Open Sans', sans-serif;font-size:28px;line-height:31px;color:#745dc5;font-weight:700;text-decoration:none;" valign="top" align="center">
+                                                                                Novelty<br/> Approval
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px;line-height: 1px;" height="35">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td valign="top" bgcolor="#ffffff" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="125">&#160;</td>
+                                                                            <td valign="top" align="center">
+                                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="40">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-family: 'Open Sans', sans-serif; font-size: 20px; line-height: 23px; color: #aaaaaa; font-weight: 600; text-decoration: none;" valign="top" align="center">
+                                                                                                Hello <t t-esc="object.employee_id.name"/>,
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="line-height: 19px;" valign="top" align="center">
+                                                                                                <t t-esc="object.employee_id.name"/> from company <t t-esc="object.employee_id.company_id.name"/> has requested <t t-esc="object.event_id.name"/> for the day <t t-esc="format_tz(object.start_date)"/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="45">&#160;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td width="125">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td valign="top" align="center">
+                                                                <table width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" align="left">
+                                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" align="center">
+                                                                                                <table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td style="font-size:1px;line-height:1px" height="1" bgcolor="#e5e5e5">&#160;</td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="30">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-family:'Open Sans', sans-serif;font-size:11px;line-height:15px;color:#404040;font-weight:normal;" valign="top" align="center">
+                                                                                                You received this email because you are registered on <a href="https://www.wsuite.com" style="text-decoration:none;font-family:'Montserrat',sans-serif;font-size:11px;line-height:15px;color:#404040;font-weight:normal;">wsuite.com</a> with the email address<br/> <a href="mailto:email@server.com" style="text-decoration:none;font-family:'Montserrat',sans-serif;font-size:11px;line-height:15px;color:#745dc5;font-weight:700;">email@server.com</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="20">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="line-height: 14px;" valign="top" align="center">
+                                                                                                <font color="#1c1c1c">
+                                                                                                    <span style="font-size: 11px;">All Rights Reserved 2020</span>
+                                                                                                </font>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </field>
+            
+            <field name="lang">{{ user.partner_id.lang }}</field>
+            <!-- <field name="user_signature" eval="False"/> -->
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+       	<record id="email_template_novelty_notification_contract_completion_same_create" model="mail.template">
+		    <field name="name">Novelty Notification Contract Completion Same Createuid-Code</field>
+		    <field name="model_id" ref="model_hr_novelty"/>
+		    <field name="email_from">{{ object.company_id.email or 'admin@wsuite.com' }}</field>
+		    <field name="email_to">
+		        {% set group_users = object.env['res.groups'].search([('name','=','Notificaciónes Terminación de contrato')], limit=1).users %}
+		        {{ group_users.mapped('login') | join(',') or '' }}
+    		    </field>
+    		    <field name="email_cc">{{ object.employee_id.parent_id.work_email or '' }}</field>
+    		    <field name="subject">The user {{ object.employee_id.name }} has requested {{ object.event_id.name }}</field>
+    		    <field name="body_html" type="html">
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                    <meta content="telephone=no" name="format-detection"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+                    @media screen and (max-width: 500px) {
+                        .table-container {
+                            width: 100% !important;
+                        }
+                    }
+                    @media only screen and (max-width:480px) {
+                        .em_hide{
+                            display: none !important;
+                        }
+                        br[class=em_hide]{
+                            display: none !important;
+                        }
+                    }
+                </style>
+
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table style="table-layout:fixed;" class="table-container" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td style="margin: 0;padding: 0;" valign="top" align="center">
+                                                <table style="margin: 0;padding: 0;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" bgcolor="#fcf7fd" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#fcf7fd" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px;line-height: 1px;" height="30">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="center">
+                                                                                <img src="https://s3.amazonaws.com/production-assets.wsuite.com/u-logo.png" alt="u-logo" style="border-image-width:1;border-image-source:none;border-image-slice:100%;border-image-repeat:stretch;border-image-outset:0;display: block;vertical-align: middle;" class="img-thumbnail o_we_selected_image" width="60" height="60" border="0"/>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px;line-height: 1px;" height="27">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-family:'Open Sans', sans-serif;font-size:28px;line-height:31px;color:#745dc5;font-weight:700;text-decoration:none;" valign="top" align="center">
+                                                                                Leave<br/> Approval
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px;line-height: 1px;" height="35">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td valign="top" bgcolor="#ffffff" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="125">&#160;</td>
+                                                                            <td valign="top" align="center">
+                                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="40">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-family: 'Open Sans', sans-serif; font-size: 20px; line-height: 23px; color: #aaaaaa; font-weight: 600; text-decoration: none;" valign="top" align="center">
+                                                                                                Hello <t t-esc="object.employee_id.name"/>,
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="line-height: 19px;" valign="top" align="center">
+                                                                                                <t t-esc="object.employee_id.name"/> from company <t t-esc="object.employee_id.company_id.name"/> has requested <t t-esc="object.event_id.name"/> for the day <t t-esc="format_tz(object.start_date)"/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="45">&#160;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td width="125">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td valign="top" align="center">
+                                                                <table width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" align="left">
+                                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" align="center">
+                                                                                                <table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td style="font-size:1px;line-height:1px" height="1" bgcolor="#e5e5e5">&#160;</td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="30">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-family:'Open Sans', sans-serif;font-size:11px;line-height:15px;color:#404040;font-weight:normal;" valign="top" align="center">
+                                                                                                You received this email because you are registered on <a href="https://www.wsuite.com" style="text-decoration:none;font-family:'Montserrat',sans-serif;font-size:11px;line-height:15px;color:#404040;font-weight:normal;">wsuite.com</a> with the email address<br/> <a href="mailto:email@server.com" style="text-decoration:none;font-family:'Montserrat',sans-serif;font-size:11px;line-height:15px;color:#745dc5;font-weight:700;">email@server.com</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="20">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="line-height: 14px;" valign="top" align="center">
+                                                                                                <font color="#1c1c1c">
+                                                                                                    <span style="font-size: 11px;">All Rights Reserved 2020</span>
+                                                                                                </font>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px;line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </field>
+            <field name="lang">{{ user.partner_id.lang }}</field>
+            <!-- <field name="user_signature" eval="False"/> -->
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="email_template_novelty_notification_contract_completion_different_create" model="mail.template">
+		    <field name="name">Novelty Notification Contract Completion Different Createuid-Code</field>
+		    <field name="model_id" ref="model_hr_novelty"/>
+		    <field name="email_from">{{ object.company_id.email or 'admin@wsuite.com' }}</field>
+		    <field name="email_to">
+		        {% set group_users = object.env['res.groups'].search([('name','=','Notificaciónes Terminación de contrato')], limit=1).users %}
+		        {{ group_users.mapped('login') | join(',') or '' }}
+		    </field>
+		    <field name="email_cc">{{ object.employee_id.parent_id.work_email or '' }}</field>
+		    <field name="subject">The user {{ object.employee_id.name }} has requested {{ object.event_id.name }}</field>
+		    <field name="body_html" type="html">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <meta content="telephone=no" name="format-detection"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+                    @media screen and (max-width: 500px) {
+                        .table-container {
+                            width: 100% !important;
+                        }
+                    }
+                    @media only screen and (max-width:480px) {
+                        .em_hide {
+                            display: none !important;
+                        }
+                        br[class=em_hide] {
+                            display: none !important;
+                        }
+                    }
+                </style>
+
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table style="table-layout:fixed;" class="table-container" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td style="margin: 0;padding: 0;" valign="top" align="center">
+                                                <table style="margin: 0;padding: 0;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" bgcolor="#fcf7fd" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#fcf7fd" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px; line-height: 1px;" height="30">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="center">
+                                                                                <img src="https://s3.amazonaws.com/production-assets.wsuite.com/u-logo.png" 
+                                                                                     alt="u-logo" 
+                                                                                     style="border: none; display: block; vertical-align: middle;" 
+                                                                                     width="60" 
+                                                                                     height="60" 
+                                                                                     border="0"/>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px; line-height: 1px;" height="27">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-family: 'Open Sans', sans-serif; font-size: 28px; line-height: 31px; color: #745dc5; font-weight: 700; text-decoration: none;" 
+                                                                                valign="top" 
+                                                                                align="center">
+                                                                                Novelty
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px; line-height: 1px;" height="35">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" bgcolor="#ffffff" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="125">&#160;</td>
+                                                                            <td valign="top" align="center">
+                                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px; line-height: 1px;" height="40">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-family: 'Open Sans', sans-serif; font-size: 20px; line-height: 23px; color: #aaaaaa; font-weight: 600; text-decoration: none;" valign="top" align="center">
+                                                                                                Hello <t t-esc="object.employee_id.name"/>,
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px; line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="line-height: 19px;" valign="top" align="center">
+                                                                                                <font color="#404040">
+                                                                                                    <span style="font-size: 14px;">
+                                                                                                        <t t-esc="object.employee_id.name"/> from company <t t-esc="object.employee_id.company_id.name"/> was approved for the <t t-esc="object.event_id.name"/> on <t t-esc="format_tz(object.start_date)"/>
+                                                                                                    </span>
+                                                                                                </font>
+                                                                                                <br/>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px; line-height: 1px;" height="25">&#160;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px; line-height: 1px;" height="45">&#160;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td width="125">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center">
+                                                <table width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" align="left">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" align="center">
+                                                                                <table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 1px; line-height: 1px;" height="1" bgcolor="#e5e5e5">&#160;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px; line-height: 1px;" height="30">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-family: 'Open Sans', sans-serif; font-size: 11px; line-height: 15px; color: #404040; font-weight: normal; text-align: center;" valign="top" align="center">
+                                                                                You received this email because you are registered on <a href="https://www.wsuite.com" style="text-decoration: none; color: #404040;">wsuite.com</a> with the email address<br/>
+                                                                                <a href="mailto:email@server.com" style="text-decoration: none; color: #745dc5;">email@server.com</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px; line-height: 1px;" height="20">&#160;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="line-height: 14px;" valign="top" align="center">
+                                                                                <font color="#1c1c1c">
+                                                                                    <span style="font-size: 11px;">All Rights Reserved 2020</span>
+                                                                                </font>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="font-size: 1px; line-height: 1px;" height="25">&#160;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+            </field>
+            <field name="lang">{{ user.partner_id.lang }}</field>
+            <!-- <field name="user_signature" eval="False"/> -->
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+</odoo>

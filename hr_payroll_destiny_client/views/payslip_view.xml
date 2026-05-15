@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="view_hr_payslip_inherit_form" model="ir.ui.view">
+		<field name="name">Payslip Inherit</field>
+		<field name="model">hr.payslip</field>
+		<field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//header/field[@name='state']" position="replace">
+				<field name="state" widget="statusbar" 
+				  statusbar_visible="draft,to_confirm,paid,done"
+				  />
+			</xpath>
+			<xpath expr="//header/button[@name='refund_sheet']" position="attributes">
+				<attribute name="invisible">1</attribute>
+			</xpath>
+			<field name="state" position="before">
+				<button string="Pay" name="action_pay" invisible="1" type="object"/>
+				<button string="Done" name="action_payslip_done" invisible="1" type="object"/>
+				<button string="Send email" name="send_payslip_email" invisible="1" type="object"/>
+				<button string="Acumulate" name="action_acumulate" invisible="state not in ('done')" type="object"/>
+				<button string="Calculate All" name="compute_sheet_all" type="object" invisible="state not in ('draft', 'verify')"/>
+				<button string="Calculate Parameters" name="action_payslip_review_parameters" type="object" invisible="1"/>
+				<button name="%(reprocess_acumulate_wizard_action)d" string="Reprocess Acumulate" type="action" invisible="1" groups="hr_payroll_destiny_client.group_payroll_reprocess_acumulate"/>
+				<button string="Calculate RF" name="action_payslip_calculate_retention" type="object" invisible="1"/>
+				<button string="Create Attachment Payslip" name="create_attachment_payslips" type="object" invisible="1"/>
+				<button string="Update Entities" name="action_update_entities" type="object" invisible="1" groups="hr_payroll_destiny_client.group_update_entities"/>
+			</field>
+			<field name="employee_id" position="attributes">
+				<attribute name="options">{'no_create': True, 'no_create_edit': True}</attribute>
+			</field>
+			<button name="action_payslip_done" position="attributes">
+				<attribute name="groups">hr_payroll.group_hr_payroll_manager</attribute>
+				<attribute name="invisible">state not in ('verify')</attribute>
+			</button>
+			<button name="action_payslip_cancel" position="attributes">
+				<attribute name="invisible">state in ('draft','hr_check','confirm','verify','done')</attribute>
+				<attribute name="groups">hr_payroll.group_hr_payroll_manager</attribute>
+			</button>
+			<field name="credit_note" position="after">
+				<field name="total_amount"/>
+				<field name="identification_id"/>
+				<field name="pay_annual"/>
+				<field name="pay_biannual"/>
+				<field name="pay_contributions"/>
+				<field name="unjustified" readonly="state not in ('draft')"/>
+				<field name="transfer_employee" readonly="state not in ('draft')"/>
+				<field name="total"/>
+				<field name="contract_completion"/>
+				<field name="progress_action"
+					   readonly="1" force_save="1"/>
+				<field name="attachment_url"
+					   widget="url" invisible="1"/>
+				<field name="description"/>
+			</field>
+			<xpath expr="//notebook" position="inside">
+				<page string="Entities">
+					<group>
+						<group>
+							<field name="eps_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="compensation_company_id"
+								   readonly="employee_id != False"
+								   force_save="1"
+								   options="{'no_create': True, 'no_create_edit': True,'no_open': True}"/>
+							<field name="unemployment_fund_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="bank_account_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="pension_fund_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+						</group>
+						<group>
+							<field name="arl_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="prepaid_medicine_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="prepaid_medicine2_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="afc_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="voluntary_contribution_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+							<field name="voluntary_contribution2_id"
+								   readonly="employee_id != False"
+								   force_save="1"/>
+						</group>
+					</group>
+				</page>
+				<page string="Rules">
+					<field name="rule_ids"/>
+				</page>
+			</xpath>
+
+			<xpath expr="//field[@name='line_ids']/tree[1]/field[@name='salary_rule_id']"
+				   position="after">
+				<field name="days"/>
+				<field name="base"/>
+				<field name="description"/>
+			</xpath>
+			<xpath expr="//field[@name='line_ids']/form[1]/group[1]/field[@name='salary_rule_id']"
+				   position="after">
+				<field name="days"/>
+				<field name="base"/>
+				<field name="description"/>
+			</xpath>
+			<xpath expr="//form/header/button[@name='compute_sheet'][2]" position="attributes">
+				<attribute name="invisible">1</attribute>
+			</xpath>
+			<field name="employee_id" position="attributes">
+				<attribute name="domain">[('is_required_you', '=', False)]</attribute>
+				<attribute name="context">{'default_is_required_you': False}</attribute>
+			</field>
+		</field>
+	</record>
+
+	<record id="view_hr_payslip_inherit_tree" model="ir.ui.view">
+		<field name="name">Payslip Inherit Tree</field>
+		<field name="model">hr.payslip</field>
+		<field name="inherit_id"
+			   ref="hr_payroll.view_hr_payslip_tree"/>
+		<field name="arch" type="xml">
+			<field name="state" position="before">
+				<field name="total_amount"/>
+			</field>
+
+		</field>
+	</record>
+
+	<record id="hr_payslip_search_view_inherit" model="ir.ui.view">
+		<field name="name">hr.payslip.search.view.inherit</field>
+		<field name="model">hr.payslip</field>
+		<field name="inherit_id"
+			   ref="hr_payroll.view_hr_payslip_filter"/>
+		<field name="arch" type="xml">
+			<xpath expr="//filter[@name='group_by_state']" position="after">
+				<filter string="Identification No"
+						name="identification_id"
+						context="{'group_by':'identification_id'}"/>
+			</xpath>
+		</field>
+	</record>
+
+	<record id="view_hr_payslip_run_inherit_form" model="ir.ui.view">
+		<field name="name">Payslip Run Inherit</field>
+		<field name="model">hr.payslip.run</field>
+		<field name="inherit_id"
+			   ref="hr_payroll.hr_payslip_run_form"/>
+		<field name="arch" type="xml">
+			<field name="state" position="before">
+				<button string="Send email"
+						name="send_payslip_run_email"
+						invisible="state in ('close')" type="object"/>
+			</field>
+		   <!--  <button name="close_payslip_run" position="attributes">
+				<attribute name="invisible">state in ('acumulate')</attribute>
+			</button> -->
+			<button name="action_draft" position="before">
+				<button string="Calculate All"
+						name="compute_sheet_all" type="object"
+						invisible="state not in ('draft', 'verify')"/>
+				<!--button string="Compute Sheets"
+						name="compute_sheet" type="object"
+						invisible="state in ('draft')"/>
+				<button string="Confirm"
+						name="action_payslip_done_thread" type="object"
+						invisible="state in ('pending_confirm')"/-->
+				<!--<button string="Confirm" name="action_payslip_done" type="object"-->
+				<!--invisible="pending_confirm"/>-->
+				<!--button string="Cancel Payslip"
+						name="action_payslip_cancel" type="object"
+						invisible="state in ('confirmed','pending_confirm','acumulate','close')"/-->
+				<!--button string="Review Calculates"
+						name="action_payslip_review_parameters" type="object"
+						invisible="state in ('draft')"/-->
+				<!--button string="Calculate payroll" name="action_payslip_caluculate_sheet" type="object"
+						invisible="draft"/-->
+				<!--button string="Calculate withholding income"
+						name="action_payslip_calculate_retention"
+						type="object"
+						invisible="state in ('draft')"/>
+				<button string="Acumulate" name="action_acumulate"
+						type="object"
+						invisible="state in ('confirmed')"/-->
+<!--                <button string="Acumulate" name="action_acumulate" type="object"-->
+<!--                        invisible="confirmed"/>-->
+				<button string="Create Attachment Payslip"
+						name="create_attachment_payslips"
+						type="object" invisible="state in ('confirmed')"/>
+				<button name="%(reprocess_acumulate_wizard_action)d"
+						string="Reprocess Acumulate" type="action"
+						invisible="state in ('confirmed')"
+						groups="hr_payroll_destiny_client.group_payroll_reprocess_acumulate"/>
+			</button>
+			<field name="company_id" position="after">
+				<field name="pay_annual" readonly="state not in ['draft']"/>
+				<field name="pay_biannual" readonly="state not in ['draft']"/>
+				<field name="pay_contributions" readonly="state not in ['draft']"/>
+				<field name="result_process"/>
+				<field name="description"/>
+			</field>
+			<xpath expr="//form/sheet" position="inside">
+				<notebook>
+					<page string="Payslips">
+						<field name="slip_ids"/>
+					</page>
+					<page string="Rules">
+						<field name="rule_ids"/>
+					</page>
+				</notebook>
+			</xpath>
+		</field>
+	</record>
+
+	<!-- <record id="hr_payslip_run_form_inherit_inherit" model="ir.ui.view">
+		<field name="name">hr.payslip.run.form.inherit.inherit</field>
+		<field name="model">hr.payslip.run</field>
+		<field name="inherit_id"
+			   ref="hr_payroll_account.hr_payslip_run_form_inherit"/>
+		<field name="arch" type="xml">
+			<field name="journal_id" position="attributes">
+				<attribute name="domain">[('is_payroll', '=', True)]</attribute>
+				<attribute name="context">{'default_is_payroll': True}</attribute>
+			</field>
+		</field>
+	</record> -->
+
+	<!-- <record id="action_compute_sheet" model="ir.actions.server">
+		<field name="name">Compute Sheet</field>
+		<field name="model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="binding_model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="state">code</field>
+		<field name="code">
+for rec in records:
+	if rec.state=='draft':
+		rec.compute_sheet()
+		</field>
+	</record> -->
+
+	<record id="action_payslip_cancel" model="ir.actions.server">
+		<field name="name">Cancel Payslip</field>
+		<field name="model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="binding_model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="state">code</field>
+		<field name="code">
+for rec in records:
+	if rec.state in ['draft','hr_check','confirm','verify','done']:
+		rec.action_payslip_cancel()
+		</field>
+	</record>
+
+	<!-- <record id="action_payslip_review_parameters"
+			model="ir.actions.server">
+		<field name="name">Calculate Parameters</field>
+		<field name="model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="binding_model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="state">code</field>
+		<field name="code">
+for rec in records:
+	rec.action_payslip_review_parameters()
+		</field>
+	</record> -->
+
+	<!-- <record id="action_payslip_calculate_retention"
+			model="ir.actions.server">
+		<field name="name">Calculate RF</field>
+		<field name="model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="binding_model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="state">code</field>
+		<field name="code">
+for rec in records:
+	rec.action_payslip_calculate_retention()
+		</field>
+	</record> -->
+
+	<record id="compute_sheet_all" model="ir.actions.server">
+		<field name="name">Calculate All</field>
+		<field name="model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="binding_model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="state">code</field>
+		<field name="code">
+for rec in records:
+	rec.compute_sheet_all()
+		</field>
+	</record>
+
+	<record id="create_attachment_payslips" model="ir.actions.server">
+		<field name="name">Create Attachment Payslip</field>
+		<field name="model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="binding_model_id"
+			   ref="hr_payroll.model_hr_payslip"/>
+		<field name="state">code</field>
+		<field name="code">
+for rec in records:
+	rec.create_attachment_payslips()
+		</field>
+	</record>
+
+	<record id="reprocess_acumulate_wizard_action_bind" model="ir.actions.act_window">
+		<field name="name">Reprocess Acumulate</field>
+		<field name="res_model">reprocess.acumulate.wizard</field>
+		<field name="view_mode">form</field>
+		<field name="target">new</field>
+	</record>
+
+	<!-- <act_window id="reprocess_acumulate_wizard_action_bind"
+				name="Reprocess Acumulate"
+				res_model="reprocess.acumulate.wizard"
+				src_model="hr.payslip" multi="True"
+				view_mode="form" target="new"
+				groups="hr_payroll_destiny_client.group_payroll_reprocess_acumulate"/> -->
+
+</odoo>
