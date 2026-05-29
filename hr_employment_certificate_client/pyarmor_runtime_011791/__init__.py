@@ -1,2 +1,2 @@
-# Pyarmor 9.2.4 (pro), 011791, 2026-05-14T16:53:20.909334
+# Pyarmor 9.2.4 (pro), 011791, 2026-05-29T14:21:50.651024
 from odoo.addons.hr_employment_certificate_client.pyarmor_runtime_011791.pyarmor_runtime import __pyarmor__
