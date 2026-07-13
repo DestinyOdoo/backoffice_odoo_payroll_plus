@@ -1,2 +1,2 @@
-# Pyarmor 9.2.4 (pro), 011791, 2026-05-29T14:58:49.010043
+# Pyarmor 9.2.4 (pro), 011791, 2026-07-12T10:02:04.860518
 from odoo.addons.hr_payroll_income_withholding_client.pyarmor_runtime_011791.pyarmor_runtime import __pyarmor__
